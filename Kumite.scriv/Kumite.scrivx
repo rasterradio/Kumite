@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="1.5" Creator="SCRWIN-1.9.12.0" Device="DESKTOP-G772DRG" Modified="2021-06-07 21:55:30 -0400" ModID="0A490AD1-7509-4E2E-83F4-1A98B6274435">
+<ScrivenerProject Template="No" Version="1.5" Creator="SCRWIN-1.9.12.0" Device="DESKTOP-G772DRG" Modified="2021-07-09 13:09:59 -0400" ModID="E768B4F9-B31D-4DDB-B603-1AA1F9AB9794">
     <Binder>
         <BinderItem ID="0" UUID="7592CE0E-F255-40A8-B794-718B2C8934B9" Created="2021-06-07 16:13:49 -0400" Modified="2021-06-07 16:13:49 -0400" Type="DraftFolder">
             <Title>Draft</Title>
@@ -7,13 +7,13 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem ID="3" UUID="D304F4A0-EAFB-414F-A25E-122CC8E8B706" Created="2021-06-07 16:13:49 -0400" Modified="2021-06-07 20:11:01 -0400" Type="Text">
+                <BinderItem ID="3" UUID="D304F4A0-EAFB-414F-A25E-122CC8E8B706" Created="2021-06-07 16:13:49 -0400" Modified="2021-07-09 13:07:29 -0400" Type="Text">
                     <Title>Kumite - A sparring video game</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>915,0</TextSelection>
+                        <TextSelection>547,0</TextSelection>
                         <Target Type="Words">0</Target>
                     </TextSettings>
                 </BinderItem>
@@ -33,37 +33,37 @@
                                 <FileExtension>rtf</FileExtension>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>2360,0</TextSelection>
+                                <TextSelection>0,2360</TextSelection>
                                 <Target Type="Words">0</Target>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="7" UUID="FF455D3D-4CB9-485D-91E1-8D3E569999C6" Created="2021-06-07 16:52:04 -0400" Modified="2021-06-07 21:51:27 -0400" Type="Text">
+                        <BinderItem ID="7" UUID="FF455D3D-4CB9-485D-91E1-8D3E569999C6" Created="2021-06-07 16:52:04 -0400" Modified="2021-07-09 13:08:50 -0400" Type="Text">
                             <Title>Movement</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>813,0</TextSelection>
+                                <TextSelection>2148,0</TextSelection>
                                 <Target Type="Words">0</Target>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="8" UUID="059CC953-2614-456B-8ED2-42286D07003D" Created="2021-06-07 16:52:49 -0400" Modified="2021-06-07 20:52:22 -0400" Type="Text">
+                        <BinderItem ID="8" UUID="059CC953-2614-456B-8ED2-42286D07003D" Created="2021-06-07 16:52:49 -0400" Modified="2021-06-09 21:14:50 -0400" Type="Text">
                             <Title>Attacks</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1778,0</TextSelection>
+                                <TextSelection>1966,0</TextSelection>
                                 <Target Type="Words">0</Target>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="6" UUID="A7272B43-8382-4098-980D-B5A113B11A1C" Created="2021-06-07 16:49:28 -0400" Modified="2021-06-07 21:52:57 -0400" Type="Text">
-                            <Title>Positions</Title>
+                        <BinderItem ID="6" UUID="A7272B43-8382-4098-980D-B5A113B11A1C" Created="2021-06-07 16:49:28 -0400" Modified="2021-07-09 13:09:56 -0400" Type="Text">
+                            <Title>States</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>855,0</TextSelection>
+                                <TextSelection>1087,0</TextSelection>
                                 <Target Type="Words">0</Target>
                             </TextSettings>
                         </BinderItem>
@@ -141,7 +141,7 @@
     <ProjectTargets>
         <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="1530" Characters="8848" Date="2021-06-07 16:13:49 -0400"/>
+        <PreviousSession Words="3" Characters="27" Date="2021-07-09 13:06:28 -0400"/>
     </ProjectTargets>
     <Collections>
         <Collection Type="Binder" ID="9A9C29B7-17C4-4AB6-80DB-4C36E291BD20" Color="0.901961 0.917647 0.933333">

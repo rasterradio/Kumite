@@ -14,7 +14,7 @@ Overview
 
 Inspired by Karate Tournament, Nidhogg and Virtua Fighter, Kumite seeks to refine the pre-Street Fighter II design of early fighting games by returning to a more deliberate, tactical style of gameplay. 
 
-Players fight in small open 3D arenas, fighting traditional rounds of three with health points and a timer.
+Players fight in small open 3D arenas, fighting traditional rounds—first to three--with health points and a timer.
 
 Character Select
 
@@ -63,8 +63,10 @@ Input Buffer
 Input buffers function as normal in other fighting games. Like in Virtua Fighter 5, Kumite has an input buffer time of 10 frames.</Text>
         </Document>
         <Document ID="6">
-            <Title>Positions</Title>
-            <Text>Standing
+            <Title>States</Title>
+            <Text>States
+
+Standing
 
 Standard state.
 
@@ -78,11 +80,13 @@ Characters enter the Side Turned state from evading. When side turned, players c
 
 Ringed Out
 
-If a player falls outside of the ring they will suffer a knockdown and player locations will be reset to their default spots in the middle of the ring. The player that rings out will suffer 2 points of damage.</Text>
+If a player falls outside of the ring, they will suffer a knockdown and player locations will be reset to their default spots in the middle of the ring. The player that rings out will suffer 2 points of damage.</Text>
         </Document>
         <Document ID="7">
             <Title>Movement</Title>
-            <Text>Walking
+            <Text>Movement
+
+Walking
 
 Players can walk by holding the Joystick left← or right→. Holding diagonals (↖↗↘↙) allow the player to move in the horizontal direction while maintaining a high or low stance. When doing this, the player will briefly hold their position before moving in the desired direction, albeit slower than when just holding left or right.
 
@@ -99,7 +103,7 @@ A successful evade takes 23 frames, with 10 frames being recovery. Unsuccessful 
 
 A note on Jumping and Crouching
 
-Kumite will go down in history as the first fighting game to intentionally remove Jumping and Crouching. Simply put, this is not a title with an air game, and ducking under and jumping over attacks are not necessary due to the stance guard system. In low stance, the player will go lower to the ground, but not enough to avoid high attacks. Executing some power attacks may put players in the air, and getting hit during one will deal 1.5 points of damage and trigger a knockdown.</Text>
+Kumite will go down in history as the first fighting game to intentionally remove Jumping and Crouching. Simply put, this is not a title with an air game, and ducking under and jumping over attacks are not necessary, due to the stance guard system. In low stance, the player will go lower to the ground, but not enough to avoid high attacks. Executing some power attacks may put players in the air, and getting hit during one will deal 1.5 points of damage and trigger a knockdown.</Text>
         </Document>
         <Document ID="8">
             <Title>Attacks</Title>
@@ -109,7 +113,7 @@ Attack phases function as they do in other fighters, with an execution phase, an
 
 Knockback
 
-Ground control plays a heavy role in Kumite. Attacks cause a large and equal amount of knockback whether they are blocked or eaten. In Karate Tournament, the player can be pushed out of the arena by knockback from default position in 6 normal hits or 3 power hits, assuming they don’t move. This suggests that power attacks cause exactly double the knockback of normal attacks.
+Ground control plays a heavy role in Kumite. Attacks cause a large and equal amount of knockback whether they are blocked or eaten. In Karate Tournament, the player can be pushed out of the arena by knockback from default position in 6 normal hits or 3 power hits, assuming they don’t move. This suggests that power attacks cause exactly double the knockback of normal attacks. Knockback will have to be examined against punch/kicks, and a decision will have to be made whether blocking players will be able to respond with an attack, if they have frame advantage.
 
 Attack Trades
 
