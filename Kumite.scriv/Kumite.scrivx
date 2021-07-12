@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="1.5" Creator="SCRWIN-1.9.12.0" Device="DESKTOP-G772DRG" Modified="2021-07-09 14:25:48 -0400" ModID="B8F7E67F-DF39-4F79-9337-863F7DF7BF89">
+<ScrivenerProject Template="No" Version="1.5" Creator="SCRWIN-1.9.12.0" Device="DESKTOP-G772DRG" Modified="2021-07-12 16:11:01 -0400" ModID="232D2BD7-1DC0-4500-A04F-827FA6BD6D39">
     <Binder>
         <BinderItem ID="0" UUID="7592CE0E-F255-40A8-B794-718B2C8934B9" Created="2021-06-07 16:13:49 -0400" Modified="2021-06-07 16:13:49 -0400" Type="DraftFolder">
             <Title>Draft</Title>
@@ -57,13 +57,13 @@
                                 <Target Type="Words">0</Target>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem ID="6" UUID="A7272B43-8382-4098-980D-B5A113B11A1C" Created="2021-06-07 16:49:28 -0400" Modified="2021-07-09 14:13:32 -0400" Type="Text">
+                        <BinderItem ID="6" UUID="A7272B43-8382-4098-980D-B5A113B11A1C" Created="2021-06-07 16:49:28 -0400" Modified="2021-07-12 16:11:00 -0400" Type="Text">
                             <Title>States</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1046,0</TextSelection>
+                                <TextSelection>1066,0</TextSelection>
                                 <Target Type="Words">0</Target>
                             </TextSettings>
                         </BinderItem>
@@ -151,7 +151,7 @@
     <ProjectTargets>
         <DraftTarget Type="Words" CountIncludedOnly="No" CurrentCompileGroupOnly="No">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="37" Characters="162" Date="2021-07-09 13:15:46 -0400"/>
+        <PreviousSession Words="3" Characters="20" Date="2021-07-12 16:10:48 -0400"/>
     </ProjectTargets>
     <Collections>
         <Collection Type="Binder" ID="9A9C29B7-17C4-4AB6-80DB-4C36E291BD20" Color="0.901961 0.917647 0.933333">
