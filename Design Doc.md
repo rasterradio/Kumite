@@ -103,7 +103,7 @@ Characters enter the Side Turned state from evading. When Side Turned, players c
 
 ### Ringed Out
 
-If a player falls outside of the ring, they will suffer a Knockdown. The player that rings out will suffer 2 points of damage. Only one character can ring out at a time.
+If a player falls outside of the ring, they will suffer a Knockdown. The player that rings out will suffer 2 points of damage. Only one character can take damage from ringing out at a time.
 
 ## References
 
