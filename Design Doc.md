@@ -1,6 +1,6 @@
-# Kumite - A sparring video game
+# Kumite - A Sparring Video Game
 
-This design document for *Kumite* is scoped for a minimum viable product. There will be features lacking that would be present in a more polished version.
+This design document for *Kumite* is scoped for a minimum viable product. There will be features lacking that would be present in a more polished version. I've purposely left out description of the game's aesthetics because I just don't want to get too excited and ahead of myself.
 
 ![Fight Photo](screenshot-spar.jpg)
 
@@ -23,7 +23,7 @@ If the timer runs out, the player with the most health will win the round. If bo
 
 ### Stances
 
-Unique to *Kumite* is the stance system. Similar to games like *Nidhogg*, the player can hold up↑ or down↓ on the joystick to switch to high or low stances. This changes what height of attacks will be used and what kinds of moves the player can guard against. When the joystick is neutral, the player is in mid stance. If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player can switch out of that stance without getting hit. Most moves in fighting games are active for 1 or 2 frames.
+Unique to *Kumite* is the Stance system. Similar to games like *Nidhogg*, the player can hold up↑ or down↓ on the joystick to switch to High or Low Stances. This changes what height of attacks will be used and what kinds of moves the player can guard against. When the joystick is neutral, the player is in Mid Stance. If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player can switch out of that stance without getting hit. Most moves in fighting games are active for 1 or 2 frames.
 
 ### Blocking
 
@@ -31,15 +31,19 @@ Blocking in *Kumite* is automatic and will succeed if the player is not attackin
 
 ### Punches and Kicks
 
-Normal attacks (P) and (K). Generally, punches have shorter range but come out faster, while kicks have longer range but take more time to come out. Hitting the enemy with the joystick in neutral will produce a middle attack, while holding up↑ while attacking strikes high, and holding down↓ while attacking strikes low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage.
+Normal attacks (P) and (K). Generally, punches have shorter range but come out faster, while kicks have a greater range but have a longer activation period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding up↑ while attacking strikes High, and holding down↓ while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
 
 ### Followup Attacks
 
-*Kumite* does not have a conventional combo system. Rather, normal attacks can follow up with one other normal attack, in any of the three stances. There is a short delay between the first attack and the followup to give the defending player a chance to block the second attack, even if they were hit by the first move. If both attacks hit the enemy, they will be knocked down. If the first attack whiffs, the followup attack will come out with reduced startup time. Followup attacks do 1 point of damage.
+*Kumite* does not have a conventional combo system. Rather, normal attacks can follow up with one other normal attack, in any of the three Stances. There is a short delay between the first attack and the followup to give the defending player a chance to block the second attack, even if they were hit by the first move. If both attacks hit the enemy, they will be knocked down. If the first attack whiffs, the followup attack will come out with reduced startup time. Followup attacks do 1 point of damage.
 
 ### Power Attacks
 
-Power Attacks are performed by pressing Punch and Kick together (P+K). Power Attacks are slower strikes with long windups that guarantee a knockdown and do 3 points of damage.
+Power Attacks are performed by pressing Punch and Kick together (P+K). Power Attacks are slower strikes with long windups that guarantee a knockdown and do 3 points of damage. Power Attacks can be performed in each of the stances.
+
+### Circular Attacks
+
+Pressing Punch and Evade or Kick and Evade (P+E/K+E) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks can be performed in each of the High, Mid and Low Stances. Circular Attacks are not affected by whether Punch or Kick was pressed.
 
 ### Evade
 
@@ -61,7 +65,7 @@ Players can dash forward or back with a double forward or backward tap of the Jo
 
 ### Evading
 
-Evading (E) allows players to move in a sideways direction into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping (E) will dodge into the background, and tapping the Joystick up↑ or down↓ alongside Evade(E) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade.
+Evading (E) allows players to move in a sideways direction into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping (E) will dodge into the background, and tapping the Joystick up↑ or down↓ alongside Evade(E) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
 
 A successful evade takes 23 frames, with 10 frames being recovery. Unsuccessful evades take longer. I ballpark 28 frames. This number is taken from *Virtua Fighter*, but *Kumite* may need more recovery frames on evades to prevent evades from being the dominant strategy.
 
@@ -106,6 +110,10 @@ Characters enter the Side Turned state from evading. When Side Turned, players c
 ### Ringed Out
 
 If a player falls outside of the ring, they will suffer a Knockdown. The player that rings out will suffer 2 points of damage. Only one character can take damage from ringing out at a time. Players cannot walk off the ring and must dash, evade, or get pushed back or knocked off the ring.
+
+## Future Concepts
+
+Future expansion could include characters with unique abilities, such as a counter, charge moves, more evade attacks, unblockable moves, throws to control arena space and get around the opponent.
 
 ## References
 
