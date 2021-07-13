@@ -2,6 +2,8 @@
 
 This design document for *Kumite* is scoped for a minimum viable product. There will be features lacking that would be present in a more polished version.
 
+![Fight Photo](screenshot-spar.jpg)
+
 ## Overview
 
 Inspired by *Karate Tournament*, *Nidhogg*, and *Virtua Fighter*, *Kumite* seeks to refine the pre-*Street Fighter II* design of early fighting games by returning to a more deliberate, tactical style of gameplay. 
