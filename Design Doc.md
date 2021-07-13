@@ -43,7 +43,7 @@ Power Attacks are performed by pressing Punch and Kick together (P+K). Power Att
 
 ### Circular Attacks
 
-Pressing Punch and Evade or Kick and Evade (P+E/K+E) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks can be performed in each of the High, Mid and Low Stances. Circular Attacks are not affected by whether Punch or Kick was pressed.
+Pressing Punch and Evade or Kick and Evade (P+E/K+E) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks can be performed in each of the High, Mid and Low Stances. Circular Attacks are not affected by whether Punch or Kick was pressed. Some Circular Attacks may travel in only one direction while others may cover both directions.
 
 ### Evade
 
