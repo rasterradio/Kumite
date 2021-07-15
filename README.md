@@ -51,7 +51,11 @@ Evade (E) will be covered in the Movement section.
 
 ### Input Buffer
 
-Input buffers function as normal in other fighting games. Like in *Virtua Fighter 5*, *Kumite* has an input buffer time of 10 frames.
+Input buffers function as normal in other fighting games. Like in *Virtua Fighter 5*, *Kumite* has an input buffer time of 10 frames. In *KOF* the input buffer is 4 frames for normal moves and 13 frames for special/super moves. In ArcSys games, if a button is held down, the game repeats the button pressed for 3 frames.
+
+### Button Priority
+
+Button priority is E > K > P. So pressing all three buttons will perform a Circular Attack.
 
 ## Movement
 
@@ -61,7 +65,7 @@ Players can walk by holding the Joystick left← or right→. Holding diagonals 
 
 ### Dashing
 
-Players can dash forward or back with a double forward or backward tap of the Joystick (←← and →→). when dashing, players cannot guard and any attack that hits them will perform a knockdown. Forward dashes can be canceled by tapping back← on the joystick to control spacing and quickly guard. Back dashes can not be canceled. After a successful dash, there is a brief few frames of recovery. Players can also dash by tapping forward or back while Evading (←+E/→+E).
+Players can dash forward or back with a double forward or backward tap of the Joystick (←← and →→), or by tapping forward or back while Evading (←+E/→+E). when dashing, players cannot guard, and any attack that hits them will perform a knockdown. Forward dashes can be canceled by tapping back← on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery. *KOF* has 1 frame startup for dashes. In ArcSys games, backdashes are invincible for the first 6 frames.
 
 ### Evading
 
@@ -113,7 +117,7 @@ If a player falls outside of the ring, they will suffer a Knockdown. The player 
 
 ## Future Concepts
 
-Future expansion could include characters with unique abilities, such as a counter, charge moves, more evade attacks, unblockable moves, throws to control arena space and get around the opponent.
+Future expansion could include characters with unique abilities, such as a counter, unblockable attacks, charge moves, more evade attacks, unblockable moves, throws to control arena space and get around the opponent. Should pushblocking be added?
 
 ## References
 
