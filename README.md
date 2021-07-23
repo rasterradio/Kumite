@@ -6,7 +6,7 @@ This design document for *Kumite* is scoped for a minimum viable product. There 
 
 ## Overview
 
-Inspired by *Karate Tournament*, *Nidhogg*, and *Virtua Fighter*, *Kumite* seeks to refine the pre-*Street Fighter II* design of early fighting games by returning to a more deliberate, tactical style of gameplay. 
+Inspired by *Karate Tournament*, *Nidhogg*, and *Virtua Fighter*, *Kumite* is a 3D martial arts game that seeks to refine the pre-*Street Fighter II* design of early fighting games by returning to a more deliberate, tactical style of gameplay. 
 Players fight in flat 3D arenas, fighting traditional rounds—first to three—with health points and a timer.
 
 ### Character Select
@@ -35,11 +35,11 @@ Normal attacks (P) and (K). Generally, punches have shorter range but come out f
 
 ### Followup Attacks
 
-*Kumite* does not have a conventional combo system. Rather, normal attacks can follow up with one other normal attack, in any of the three Stances. There is a short delay between the first attack and the followup to give the defending player a chance to block the second attack, even if they were hit by the first move. If both attacks hit the enemy, they will be knocked down. If the first attack whiffs, the followup attack will come out with reduced startup time. Followup attacks do 1 point of damage.
+*Kumite* does not have a conventional combo system. Rather, normal attacks can follow up with one other normal attack, in any of the three Stances. There is a short delay between the first attack and the followup to give the defending player a chance to block the second attack, even if they were hit by the first move. If both attacks hit the enemy, they will be Knocked Down. If the first attack whiffs, the followup attack will come out with reduced startup time. Followup attacks do 1 point of damage.
 
 ### Power Attacks
 
-Power Attacks are performed by pressing Punch and Kick together (P+K). Power Attacks are slower strikes with long windups that guarantee a knockdown and do 3 points of damage. Power Attacks can be performed in each of the stances.
+Power Attacks are performed by pressing Punch and Kick together (P+K). Power Attacks are slower strikes with long windups that Knock Down and do 3 points of damage. Power Attacks can be performed in each of the stances.
 
 ### Circular Attacks
 
@@ -61,15 +61,15 @@ Button priority is E > K > P. So pressing all three buttons will perform a Circu
 
 ### Walking
 
-Players can walk by holding the Joystick left← or right→. Holding diagonals (↖↗↘↙) allow the player to move in the horizontal direction while maintaining a high or low stance. When doing this, the player will briefly hold their stance in place before slowly walking in the desired direction.
+Players can walk back or forward by holding the Joystick left← or right→. When walking normally, players will be in Mid Stance. Holding a diagonal (↖↗↘↙) allows the player to move back or forward while maintaining a high or low stance. When doing this, the player will briefly hold their stance in place before slowly walking in the desired direction.
 
 ### Dashing
 
-Players can dash forward or back with a double forward or backward tap of the Joystick (←← and →→), or by tapping forward or back while Evading (←+E/→+E). when dashing, players cannot guard, and any attack that hits them will perform a knockdown. Forward dashes can be canceled by tapping back← on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery. *KOF* has 1 frame startup for dashes. In ArcSys games, backdashes are invincible for the first 6 frames.
+Players can dash forward or back with a double forward or backward tap of the Joystick (←← and →→), or by tapping forward or back while Evading (←+E/→+E). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping back← on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery. *KOF* has 1 frame startup for dashes. In ArcSys games, backdashes are invincible for the first 6 frames.
 
 ### Evading
 
-Evading (E) allows players to move in a sideways direction into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping (E) will dodge into the background, and tapping the Joystick up↑ or down↓ alongside Evade(E) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
+Evading (E) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping (E) will dodge into the background, and tapping the Joystick up↑ or down↓ alongside Evade(E) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
 
 A successful evade takes 23 frames, with 10 frames being recovery. Unsuccessful evades take longer. I ballpark 28 frames. This number is taken from *Virtua Fighter*, but *Kumite* may need more recovery frames on evades to prevent evades from being the dominant strategy.
 
@@ -105,7 +105,7 @@ Standard state.
 
 ### Knocked Down
 
-Players enter the Knockdown state after being hit by an attack and its followup attack, a power attack, or from falling off the arena. In this state the player cannot be hit, and both players are reset to their default positions in the middle of the arena.
+Players enter the Knockdown state after being hit by an attack and its followup attack, a power attack, or from falling off the arena. In this state the player cannot be hit, and both players are reset to their default positions in the middle of the arena. Knockdowns exist to moderate the pacing of the match, to allow players to register what caused the Knockdown, and to remove the wakeup game from the fighting design template.
 
 ### Side/Back Turned
 
