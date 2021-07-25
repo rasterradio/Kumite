@@ -6,7 +6,7 @@ This design document for *Kumite* is scoped for a minimum viable product. There 
 
 ## Overview
 
-Inspired by *Karate Tournament*, *Nidhogg*, and *Virtua Fighter*, *Kumite* is a 3D martial arts game that seeks to refine the pre-*Street Fighter II* design of early fighting games by returning to a more deliberate, tactical style of gameplay. 
+Inspired by *Karate Tournament*, *Nidhogg*, and *Virtua Fighter*, *Kumite* is a 3D sparring game that seeks to refine the pre-*Street Fighter II* design of early fighting games by returning to a more deliberate, tactical style of gameplay. 
 Players fight in flat 3D arenas, fighting traditional rounds—first to three—with health points and a timer.
 
 ### Character Select
