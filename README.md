@@ -21,6 +21,18 @@ If the timer runs out, the player with the most health will win the round. If bo
 
 *Kumite* is played using a Joystick (↑ and three buttons: Punch (P), Kick (K), and Evade (E).
 
+Command (when facing right) | Motion
+------------ | -------------
+![Button A](c_a.gif) | Punch
+![Button B](c_b.gif) | Kick
+![Button C](c_c.gif) | Evade
+![Button A](c_a.gif)+![Button B](c_b.gif) | Power attack
+![Button A](c_a.gif)+![Button C](c_c.gif)or![Button B](c_b.gif)+![Button C](c_c.gif) | Circular attack
+![Joystick Up](c_7.gif) (hold) | High stance
+![Joystick Down](c_3.gif) (hold) | Low stance
+![Joystick Right](c_5.gif)![Joystick Right](c_5.gif) or ![Joystick Right](c_5.gif)+![Button C](c_c.gif) | Dash forward
+![Joystick Left](c_1.gif)![Joystick Left](c_1.gif) or ![Joystick Left](c_1.gif)+![Button C](c_c.gif) | Back dash
+
 ### Stances
 
 Unique to *Kumite* is the Stance system. Similar to games like *Nidhogg*, the player can hold up↑ or down↓ on the joystick to switch to High or Low Stances. This changes what height of attacks will be used and what kinds of moves the player can guard against. When the joystick is neutral, the player is in Mid Stance. If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player can switch out of that stance without getting hit. Most moves in fighting games are active for 1 or 2 frames.
