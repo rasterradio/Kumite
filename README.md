@@ -123,7 +123,7 @@ Players enter the Knockdown state after being hit by an attack and its followup 
 
 Characters enter the Side Turned state from evading. When Side Turned, players cannot block. Neutral attacks do 1.5 damage to side turned opponents. When a player has been hit during the Side Surned state, they will instantly return to Standing state. It takes 3 frames to be able to face forward and block, or evade. After the 3 frames are up, pressing any direction will return the player to Standing State. Forward dashes do not input buffer when Side Turned. Standing players attacking Side Turned players get a +2 frame bonus on hit.
 
-### Ringed Out
+### Ring Out
 
 If a player falls outside of the ring, they will suffer a Knockdown. The player that rings out will suffer 2 points of damage. Only one character can take damage from ringing out at a time. Players cannot walk off the ring and must dash, evade, or get pushed back or knocked off the ring.
 
