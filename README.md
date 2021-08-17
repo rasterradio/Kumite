@@ -97,7 +97,7 @@ Attack phases function as they do in other fighters, with an execution phase, an
 
 ### Knockback
 
-Ground control plays a heavy role in *Kumite*. Attacks cause a large and equal amount of knockback whether they are blocked or eaten. In *Karate Tournament*, the player can be pushed out of the arena by knockback from default position in 6 normal hits or 3 power hits, assuming they don’t move. This suggests that power attacks cause exactly double the knockback of normal attacks. They would also have, on average, double the recovery time.  Knockback will have to be examined against punch/kicks, and a decision will have to be made whether blocking players will be able to respond with an attack, if they have frame advantage.
+Ground control plays a heavy role in *Kumite*. Attacks cause a large and equal amount of knockback whether they are blocked or eaten. In *Karate Tournament*, the player can be pushed out of the arena by knockback from default position in 6 normal hits or 3 power hits, assuming they don’t move. So power attacks cause double the knockback of normal attacks. They would also have, on average, double the recovery time.  Knockback will have to be examined against punch/kicks, and a decision will have to be made whether blocking players will be able to respond with an attack, if they have frame advantage.
 
 ### Attack Trades
 
@@ -125,7 +125,9 @@ Characters enter the Side Turned state from evading. When Side Turned, players c
 
 ### Ring Out
 
-If a player falls outside of the ring, they will suffer a Knockdown. The player that rings out will suffer 2 points of damage. Only one character can take damage from ringing out at a time. Players cannot walk off the ring and must dash, evade, or get pushed back or knocked off the ring.
+If a player falls outside of the ring, they will suffer a Knockdown. The player that rings out will suffer 2 points of damage. Only one character can take damage from ringing out at a time. Players cannot walk off the ring and must dash, evade, or get pushed back or knocked off the ring. 
+
+Damage does not stack if a player is hit and knocked out of the ring. Instead the higher source of damage will be dealt. So if a player is knocked out of the ring by a normal attack, they will take 2 points of damage. If they are knocked out by a power attack they will take 3 points.
 
 ## Future Concepts
 
