@@ -74,6 +74,7 @@ Button priority is (![Button C](c_c.gif)>![Button B](c_b.gif)>![Button A](c_a.gi
 ### Walking
 
 Players can walk back or forward by holding the Joystick left![Joystick Left](c_4.gif) or right![Joystick Right](c_6.gif). When walking normally, players will be in Mid Stance. Holding a diagonal (↖↗↘↙) allows the player to move back or forward while maintaining a high or low stance. When doing this, the player will briefly hold their stance in place before slowly walking in the desired direction.
+![KT Diagonal](kt_diagonal.gif)
 
 ### Dashing
 
