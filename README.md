@@ -63,7 +63,7 @@ Evade ![Button C](c_c.gif) will be covered in the Movement section.
 
 ### Input Buffer
 
-Input buffers function as normal in other fighting games. Like in *Virtua Fighter 5*, *Kumite* has an input buffer time of 10 frames. In *KOF* the input buffer is 4 frames for normal moves and 13 frames for special/super moves. In ArcSys games, if a button is held down, the game repeats the button pressed for 3 frames.
+Input buffers function as normal in other fighting games. In *Virtua Fighter 5* the input buffer is 10 frames. In *KOF* the input buffer is 4 frames for normal moves and 13 frames for special/super moves. In ArcSys games, if a button is held down, the game repeats the button pressed for 3 frames.
 
 ### Button Priority
 
