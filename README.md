@@ -43,7 +43,7 @@ Blocking in *Kumite* is automatic and will succeed if the player is not attackin
 
 ### Punches and Kicks
 
-Normal attacks (![Button A](c_a.gif) and ![Button B](c_b.gif)). Generally, punches have shorter range but come out faster, while kicks have a greater range but have a longer activation period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding up![Joystick Up](c_8.gif) while attacking strikes High, and holding down![Joystick Down](c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
+Punch ![Button A](c_a.gif) and Kick ![Button B](c_b.gif). Generally, punches have shorter range but come out faster, while kicks have a greater range but have a longer startup period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding up![Joystick Up](c_8.gif) while attacking strikes High, and holding down![Joystick Down](c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
 
 ### Followup Attacks
 
