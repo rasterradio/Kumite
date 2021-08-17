@@ -73,7 +73,7 @@ Button priority is (![Button C](c_c.gif)>![Button B](c_b.gif)>![Button A](c_a.gi
 
 ### Walking
 
-Players can walk back or forward by holding the Joystick left![Joystick Left](c_4.gif) or right![Joystick Right](c_6.gif). When walking normally, players will be in Mid Stance. Holding a diagonal input (↖↗↘↙) allows the player to move back or forward while maintaining a high or low stance.
+Players can walk back or forward by holding the Joystick left![Joystick Left](c_4.gif) or right![Joystick Right](c_6.gif). When walking normally, players will be in Mid Stance. Holding a diagonal input (![Joystick Upleft](c_7.gif)![Joystick Upright](c_9.gif)![Joystick Downright](c_3.gif)![Joystick Downleft](c_1.gif)) allows the player to move back or forward while maintaining a high or low stance.
 
 ### Dashing
 
@@ -81,7 +81,7 @@ Players can dash forward or back with a double forward or backward tap of the Jo
 
 ### Evading
 
-Evading (![Button C](c_c.gif)) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping (![Button C](c_c.gif)) will dodge into the background, and tapping the Joystick up![Joystick Up](c_8.gif) or down![Joystick Down](c_2.gif) alongside Evade(![Button C](c_c.gif)) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
+Evading ![Button C](c_c.gif) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping ![Button C](c_c.gif) will dodge into the background, and tapping the Joystick up![Joystick Up](c_8.gif) or down![Joystick Down](c_2.gif) alongside Evade![Button C](c_c.gif) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
 
 A successful evade takes 23 frames, with 10 frames being recovery. Unsuccessful evades take longer. I ballpark 28 frames. This number is taken from *Virtua Fighter*, but *Kumite* may need more recovery frames on evades to prevent evades from being the dominant strategy.
 
