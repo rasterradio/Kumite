@@ -129,7 +129,7 @@ If a player falls outside of the ring, they will suffer a Knockdown. The player 
 
 ## Future Concepts
 
-In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. *Fighters Destiny* has a similar point system and could point to future gameplay expansion.
+In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
 
 - Multiple characters with unique abilities
 - Throws to initiate knockdowns, control spacing
