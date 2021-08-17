@@ -113,7 +113,7 @@ Tracking functions the same as in *Virtua Fighter*. Attacks do not automatically
 
 ### Standing
 
-Standard state.
+Standard state. This is the only state where the player can block, attack, switch stances or evade.
 
 ### Knocked Down
 
@@ -129,9 +129,16 @@ If a player falls outside of the ring, they will suffer a Knockdown. The player 
 
 ## Future Concepts
 
-Future expansion could include characters with unique abilities, such as a counter, unblockable attacks, charge moves, more evade attacks, throws to control arena space and get around the opponent. Should pushblocking be added? Should players have some or full control of their movement before the round begins like in *DOA*? In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay.
+In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. *Fighters Destiny* has a similar point system and could point to future gameplay expansion.
+
+- Multiple characters with unique abilities
+- Throws to initiate knockdowns, control spacing
+- Charge moves
+- Pushblocking
+- Pre-match movement like in *DOA*?
 
 ## References
 
 - [Virtua Fighter Wiki](https://virtuafighter.com/wiki/index/)
 - [HG101 Article on The Karate Tournament](http://www.hardcoregaming101.net/chatan-yarakuu-shanku/)
+- [HG101 Article on Fighters Destiny](http://www.hardcoregaming101.net/fighters-destiny/)
