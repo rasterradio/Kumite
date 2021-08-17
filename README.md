@@ -19,7 +19,7 @@ If the timer runs out, the player with the most health will win the round. If bo
 
 ## Controls
 
-*Kumite* is played using a Joystick (↑ and three buttons: Punch (P), Kick (K), and Evade (E).
+*Kumite* is played using a Joystick ![Joystick Up](c_7.gif) and three buttons: Punch ![Button A](c_a.gif), Kick ![Button B](c_b.gif), and Evade ![Button C](c_c.gif).
 
 Command (when facing right) | Motion
 ------------ | -------------
@@ -35,15 +35,15 @@ Command (when facing right) | Motion
 
 ### Stances
 
-Unique to *Kumite* is the Stance system. Similar to games like *Nidhogg*, the player can hold up↑ or down↓ on the joystick to switch to High or Low Stances. This changes what height of attacks will be used and what kinds of moves the player can guard against. When the joystick is neutral, the player is in Mid Stance. If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player can switch out of that stance without getting hit. Most moves in fighting games are active for 1 or 2 frames.
+Unique to *Kumite* is the Stance system. Similar to games like *Nidhogg*, the player can hold up![Joystick Up](c_7.gif) or down ![Joystick Down](c_3.gif) on the joystick to switch to High or Low Stances. This changes what height of attacks will be used and what kinds of moves the player can guard against. When the joystick is neutral, the player is in Mid Stance. If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player can switch out of that stance without getting hit. Most moves in fighting games are active for 1 or 2 frames.
 
 ### Blocking
 
-Blocking in *Kumite* is automatic and will succeed if the player is not attacking, dashing, or evading while in the correct stance. Kumite does not have chip damage. If one player holds the joystick up to strike high, the other player must be holding the joystick up↑ in the high stance to block the strike.
+Blocking in *Kumite* is automatic and will succeed if the player is not attacking, dashing, or evading while in the correct stance. Kumite does not have chip damage. If one player holds the joystick up![Joystick Up](c_7.gif) to strike high, the other player must be holding the joystick up![Joystick Up](c_7.gif) in the high stance to block the strike.
 
 ### Punches and Kicks
 
-Normal attacks (P) and (K). Generally, punches have shorter range but come out faster, while kicks have a greater range but have a longer activation period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding up↑ while attacking strikes High, and holding down↓ while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
+Normal attacks (![Button A](c_a.gif) and ![Button B](c_b.gif)). Generally, punches have shorter range but come out faster, while kicks have a greater range but have a longer activation period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding up![Joystick Up](c_7.gif) while attacking strikes High, and holding down![Joystick Down](c_3.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
 
 ### Followup Attacks
 
@@ -51,15 +51,15 @@ Normal attacks (P) and (K). Generally, punches have shorter range but come out f
 
 ### Power Attacks
 
-Power Attacks are performed by pressing Punch and Kick together (P+K). Power Attacks are slower strikes with long windups that Knock Down and do 3 points of damage. Power Attacks can be performed in each of the stances.
+Power Attacks are performed by pressing Punch and Kick together (![Button A](c_a.gif)+![Button B](c_b.gif)). Power Attacks are slower strikes with long windups that Knock Down and do 3 points of damage. Power Attacks can be performed in each of the stances.
 
 ### Circular Attacks
 
-Pressing Punch and Evade or Kick and Evade (P+E/K+E) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks can be performed in each of the High, Mid and Low Stances. Circular Attacks are not affected by whether Punch or Kick was pressed. Some Circular Attacks may travel in only one direction while others may cover both directions.
+Pressing Punch and Evade or Kick and Evade (![Button A](c_a.gif)+![Button C](c_c.gif) or ![Button B](c_b.gif)+![Button C](c_c.gif)) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks can be performed in each of the High, Mid and Low Stances. Circular Attacks are not affected by whether Punch or Kick was pressed. Some Circular Attacks may travel in only one direction while others may cover both directions.
 
 ### Evade
 
-Evade (E) will be covered in the Movement section.
+Evade ![Button C](c_c.gif) will be covered in the Movement section.
 
 ### Input Buffer
 
@@ -67,21 +67,21 @@ Input buffers function as normal in other fighting games. Like in *Virtua Fighte
 
 ### Button Priority
 
-Button priority is E > K > P. So pressing all three buttons will perform a Circular Attack.
+Button priority is (![Button C](c_c.gif)>![Button B](c_b.gif)>![Button A](c_a.gif)). So pressing all three buttons will perform a Circular Attack.
 
 ## Movement
 
 ### Walking
 
-Players can walk back or forward by holding the Joystick left← or right→. When walking normally, players will be in Mid Stance. Holding a diagonal (↖↗↘↙) allows the player to move back or forward while maintaining a high or low stance. When doing this, the player will briefly hold their stance in place before slowly walking in the desired direction.
+Players can walk back or forward by holding the Joystick left![Joystick Left](c_1.gif) or right![Joystick Right](c_5.gif). When walking normally, players will be in Mid Stance. Holding a diagonal (↖↗↘↙) allows the player to move back or forward while maintaining a high or low stance. When doing this, the player will briefly hold their stance in place before slowly walking in the desired direction.
 
 ### Dashing
 
-Players can dash forward or back with a double forward or backward tap of the Joystick (←← and →→), or by tapping forward or back while Evading (←+E/→+E). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping back← on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery. *KOF* has 1 frame startup for dashes. In ArcSys games, backdashes are invincible for the first 6 frames.
+Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](c_1.gif)![Joystick Left](c_1.gif) and ![Joystick Right](c_5.gif)![Joystick Right](c_5.gif)), or by tapping forward or back while Evading (![Joystick Left](c_1.gif)+![Button C](c_c.gif)and![Joystick Right](c_5.gif)+![Button C](c_c.gif)). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping back![Joystick Left](c_1.gif) on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery. *KOF* has 1 frame startup for dashes. In ArcSys games, backdashes are invincible for the first 6 frames.
 
 ### Evading
 
-Evading (E) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping (E) will dodge into the background, and tapping the Joystick up↑ or down↓ alongside Evade(E) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
+Evading (![Button C](c_c.gif)) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping (![Button C](c_c.gif)) will dodge into the background, and tapping the Joystick up![Joystick Up](c_7.gif) or down![Joystick Down](c_3.gif) alongside Evade(![Button C](c_c.gif)) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
 
 A successful evade takes 23 frames, with 10 frames being recovery. Unsuccessful evades take longer. I ballpark 28 frames. This number is taken from *Virtua Fighter*, but *Kumite* may need more recovery frames on evades to prevent evades from being the dominant strategy.
 
@@ -102,8 +102,8 @@ Ground control plays a heavy role in *Kumite*. Attacks cause a large and equal a
 ### Attack Trades
 
 If both players trade:
--The attack that does the higher damage wins
--If the damage is equal, neither player will receive damage. A visual indicator will appear to let players know that the trade was equal, and both players will be pushed back the amount of a power attack. Players cannot be knocked off the arena in this way and will instead land one step away from the edge.
+- The attack that does the higher damage wins
+- If the damage is equal, neither player will receive damage. A visual indicator will appear to let players know that the trade was equal, and both players will be pushed back the amount of a power attack. Players cannot be knocked off the arena in this way and will instead land one step away from the edge.
 
 ### Attack Tracking
 
