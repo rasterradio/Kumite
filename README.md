@@ -131,7 +131,7 @@ If a player falls outside of the ring, they will suffer a Knockdown. The player 
 
 ## Future Concepts
 
-Future expansion could include characters with unique abilities, such as a counter, unblockable attacks, charge moves, more evade attacks, unblockable moves, throws to control arena space and get around the opponent. Should pushblocking be added? Should players have some or full control of their movement before the round begins like in DOA? In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay, as well as any things to note regarding draw games and the timer.
+Future expansion could include characters with unique abilities, such as a counter, unblockable attacks, charge moves, more evade attacks, unblockable moves, throws to control arena space and get around the opponent. Should pushblocking be added? Should players have some or full control of their movement before the round begins like in *DOA*? In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay.
 
 ## References
 
