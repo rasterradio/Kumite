@@ -2,7 +2,7 @@
 
 This design document for *Kumite* is scoped for a minimum viable product. There will be features lacking that would be present in a more polished version. I've purposely left out description of the game's aesthetics because I just don't want to get too excited and ahead of myself.
 
-![Fight Photo](screenshot-spar.jpg)
+![Fight Photo](/images/screenshot-spar.jpg)
 
 ## Overview
 
@@ -19,19 +19,19 @@ If the timer runs out, the player with the most health will win the round. If bo
 
 ## Controls
 
-*Kumite* is played using a Joystick ![Joystick Up](c_8.gif) and three buttons: Punch ![Button A](c_a.gif), Kick ![Button B](c_b.gif), and Evade ![Button C](c_c.gif).
+*Kumite* is played using a Joystick ![Joystick Up](/images/c_8.gif) and three buttons: Punch ![Button A](/images/(/images/c_a.gif), Kick ![Button B](/images/(/images/c_b.gif), and Evade ![Button C](/images/c_c.gif).
 
 Command (when facing right) | Motion
 ------------ | -------------
-![Button A](c_a.gif) | Punch
-![Button B](c_b.gif) | Kick
-![Button C](c_c.gif) | Evade
-![Button A](c_a.gif)+![Button B](c_b.gif) | Power attack
-![Button A](c_a.gif)+![Button C](c_c.gif)or![Button B](c_b.gif)+![Button C](c_c.gif) | Circular attack
+![Button A](/images/(/images/c_a.gif) | Punch
+![Button B](/images/(/images/c_b.gif) | Kick
+![Button C](/images/c_c.gif) | Evade
+![Button A](/images/(/images/c_a.gif)+![Button B](/images/(/images/c_b.gif) | Power attack
+![Button A](/images/(/images/c_a.gif)+![Button C](/images/c_c.gif)or![Button B](/images/(/images/c_b.gif)+![Button C](/images/c_c.gif) | Circular attack
 ![Joystick Up](c_8.gif) (hold) | High stance
 ![Joystick Down](c_2.gif) (hold) | Low stance
-![Joystick Right](c_6.gif)![Joystick Right](c_6.gif) or ![Joystick Right](c_6.gif)+![Button C](c_c.gif) | Dash forward
-![Joystick Left](c_4.gif)![Joystick Left](c_4.gif) or ![Joystick Left](c_4.gif)+![Button C](c_c.gif) | Back dash
+![Joystick Right](c_6.gif)![Joystick Right](c_6.gif) or ![Joystick Right](c_6.gif)+![Button C](/images/c_c.gif) | Dash forward
+![Joystick Left](c_4.gif)![Joystick Left](c_4.gif) or ![Joystick Left](c_4.gif)+![Button C](/images/c_c.gif) | Back dash
 
 ### Stances
 
@@ -43,7 +43,7 @@ Blocking in *Kumite* is automatic and will succeed if the player is not attackin
 
 ### Punches and Kicks
 
-Punch ![Button A](c_a.gif) and Kick ![Button B](c_b.gif). Generally, punches have shorter range but come out faster, while kicks have a greater range but have a longer startup period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding ![Joystick Up](c_8.gif) while attacking strikes High, and holding ![Joystick Down](c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
+Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Generally, punches have shorter range but come out faster, while kicks have a greater range but have a longer startup period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding ![Joystick Up](c_8.gif) while attacking strikes High, and holding ![Joystick Down](c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
 
 ### Followup Attacks
 
@@ -51,15 +51,15 @@ Punch ![Button A](c_a.gif) and Kick ![Button B](c_b.gif). Generally, punches hav
 
 ### Power Attacks
 
-Power Attacks are performed by pressing Punch and Kick together (![Button A](c_a.gif)+![Button B](c_b.gif)). Power Attacks are slower strikes with long windups that Knock Down and do 3 points of damage. Power Attacks can be performed in each of the stances.
+Power Attacks are performed by pressing Punch and Kick together (![Button A](/images/c_a.gif)+![Button B](/images/c_b.gif)). Power Attacks are slower strikes with long windups that Knock Down and do 3 points of damage. Power Attacks can be performed in each of the stances.
 
 ### Circular Attacks
 
-Pressing Punch and Evade or Kick and Evade (![Button A](c_a.gif)+![Button C](c_c.gif) or ![Button B](c_b.gif)+![Button C](c_c.gif)) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks can be performed in each of the High, Mid and Low Stances. Circular Attacks behave the same regardless of whether ![Button A](c_a.gif) or ![Button B](c_b.gif) was pressed. Some Circular Attacks may travel in only one direction while others may cover both directions.
+Pressing Punch and Evade or Kick and Evade (![Button A](/images/c_a.gif)+![Button C](/images/c_c.gif) or ![Button B](/images/c_b.gif)+![Button C](/images/c_c.gif)) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks can be performed in each of the High, Mid and Low Stances. Circular Attacks behave the same regardless of whether ![Button A](/images/c_a.gif) or ![Button B](/images/c_b.gif) was pressed. Some Circular Attacks may travel in only one direction while others may cover both directions.
 
 ### Evade
 
-Evade ![Button C](c_c.gif) will be covered in the Movement section.
+Evade ![Button C](/images/c_c.gif) will be covered in the Movement section.
 
 ### Input Buffer
 
@@ -67,7 +67,7 @@ Input buffers function as normal in other fighting games. In *Virtua Fighter 5* 
 
 ### Button Priority
 
-Button priority is ![Button C](c_c.gif)>![Button B](c_b.gif)>![Button A](c_a.gif). So pressing all three buttons will perform a Circular Attack.
+Button priority is ![Button C](/images/c_c.gif)>![Button B](/images/c_b.gif)>![Button A](/images/c_a.gif). So pressing all three buttons will perform a Circular Attack.
 
 ## Movement
 
@@ -77,11 +77,11 @@ Players can walk back or forward by holding the Joystick ![Joystick Left](c_4.gi
 
 ### Dashing
 
-Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](c_4.gif)![Joystick Left](c_4.gif) and ![Joystick Right](c_6.gif)![Joystick Right](c_6.gif)), or by tapping forward or back while Evading (![Joystick Left](c_4.gif)+![Button C](c_c.gif)and![Joystick Right](c_6.gif)+![Button C](c_c.gif)). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping ![Joystick Left](c_4.gif) on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery. *KOF* has 1 frame startup for dashes. In ArcSys games, backdashes are invincible for the first 6 frames.
+Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](c_4.gif)![Joystick Left](c_4.gif) and ![Joystick Right](c_6.gif)![Joystick Right](c_6.gif)), or by tapping forward or back while Evading (![Joystick Left](c_4.gif)+![Button C](/images/c_c.gif)and![Joystick Right](c_6.gif)+![Button C](/images/c_c.gif)). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping ![Joystick Left](c_4.gif) on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery. *KOF* has 1 frame startup for dashes. In ArcSys games, backdashes are invincible for the first 6 frames.
 
 ### Evading
 
-Evading ![Button C](c_c.gif) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping ![Button C](c_c.gif) will dodge into the background, and tapping the Joystick ![Joystick Up](c_8.gif) or ![Joystick Down](c_2.gif) alongside ![Button C](c_c.gif) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
+Evading ![Button C](/images/c_c.gif) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping ![Button C](/images/c_c.gif) will dodge into the background, and tapping the Joystick ![Joystick Up](c_8.gif) or ![Joystick Down](c_2.gif) alongside ![Button C](/images/c_c.gif) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
 
 A successful evade takes 23 frames, with 10 frames being recovery. Unsuccessful evades take longer. I ballpark 28 frames. This number is taken from *Virtua Fighter*, but *Kumite* may need more recovery frames on evades to prevent evades from being the dominant strategy. Evasion is a powerful defence tool in *Kumite*, since guessing which stance to block has only a 33% chance of success compared to 50% in most fighters.
 
