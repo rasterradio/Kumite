@@ -81,7 +81,7 @@ Players can dash forward or back with a double forward or backward tap of the Jo
 
 ### Evading
 
-Evading ![Button C](/images/c_c.gif) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping ![Button C](/images/c_c.gif) will dodge into the background, and tapping the Joystick ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) alongside ![Button C](/images/c_c.gif) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). If a player is Side Turned, they will have to wait 3 for frames before they can Evade. Players are otherwise treated as being in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
+Evading ![Button C](/images/c_c.gif) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping ![Button C](/images/c_c.gif) will dodge into the background, and tapping the Joystick ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) alongside ![Button C](/images/c_c.gif) will dash into the background or foreground. Players are invincible during the evade and for 1 frame afterward (not the recovery frames). Players are in Mid Stance while Evading. If the joystick is held up or down while Evading, the player will return to that stance after the Evade.
 
 A successful evade takes 23 frames, with 10 frames being recovery. Unsuccessful evades take longer. I ballpark 28 frames. This number is taken from *Virtua Fighter*, but *Kumite* may need more recovery frames on evades to prevent evades from being the dominant strategy. Evasion is a powerful defence tool in *Kumite*, since guessing which stance to block has only a 33% chance of success compared to 50% in most fighters.
 
@@ -118,10 +118,6 @@ Standard state. This is the only state where the player can block, attack, switc
 ### Knocked Down
 
 Players enter the Knockdown state after being hit by an attack and its followup attack, a power attack, or from falling off the arena. In this state the player cannot be hit, and both players are reset to their default positions in the middle of the arena. Knockdowns exist to moderate the pacing of the match, to allow players to register what caused the Knockdown, and to remove the wakeup game from the fighting design template.
-
-### Side/Back Turned
-
-Characters enter the Side Turned state from evading. When Side Turned, players cannot block. Neutral attacks do 1.5 damage to side turned opponents. When a player has been hit during the Side Surned state, they will instantly return to Standing state. It takes 3 frames to be able to face forward and block, or evade. After the 3 frames are up, pressing any direction will return the player to Standing State. Forward dashes do not input buffer when Side Turned. Standing players attacking Side Turned players get a +2 frame bonus on hit.
 
 ### Ring Out
 
