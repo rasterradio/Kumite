@@ -134,6 +134,7 @@ In the future a "match structure" section will be needed, outlining pre-match an
 - Charge moves
 - Pushblocking
 - Pre-match movement like in *DOA*?
+- Comeback mechanics?
 
 ## References
 
