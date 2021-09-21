@@ -1,6 +1,6 @@
 # Kumite - A Sparring Video Game
 
-This design document for *Kumite* is scoped for a minimum viable product. There will be features lacking that would be present in a more polished version. I've purposely left out description of the game's aesthetics because I just don't want to get too excited and ahead of myself.
+This design document for *Kumite* is scoped for a minimum viable product. There will be features lacking that would be present in a more polished version. I've left out any description of the game's aesthetics because I want to focus on gameplay systems and not get too ahead of myself.
 
 ![Fight Photo](/images/screenshot-spar.jpg)
 
@@ -46,7 +46,7 @@ After a successful block the blocker will have a frame advantage if a normal att
 
 ### Punches and Kicks
 
-Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Generally, punches have shorter range but come out faster, while kicks have a greater range but have a longer startup period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding ![Joystick Up](/images/c_8.gif) while attacking strikes High, and holding ![Joystick Down](/images/c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
+Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Generally, punches have a shorter range but come out faster, while kicks have a greater range but have a longer startup period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding ![Joystick Up](/images/c_8.gif) while attacking strikes High, and holding ![Joystick Down](/images/c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
 
 ### Followup Attacks
 
@@ -138,7 +138,7 @@ Damage does not stack if a player is hit and knocked out of the ring. Instead th
 
 ## Future Concepts
 
-In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
+In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also more on the intended player experience, using examples from other games. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
 
 - Multiple characters with unique abilities
 - Pre-match movement like in *DOA*
