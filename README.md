@@ -81,7 +81,7 @@ Players can walk back or forward by holding the Joystick ![Joystick Left](/image
 
 ### Dashing
 
-Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back while Evading (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif)and![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping ![Joystick Left](/images/c_4.gif) on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery.
+Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back while Evading (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif)and![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping ![Joystick Left](/images/c_4.gif) on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Back dashes should have some invincibility frames. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery.
 
 ### Evading
 
