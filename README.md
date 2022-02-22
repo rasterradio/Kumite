@@ -67,7 +67,7 @@ Evade ![Button C](/images/c_c.gif) will be covered in the Movement section.
 
 ### Input Buffer
 
-Input buffers function as normal in other fighting games. In *Virtua Fighter 5* the input buffer is 10 frames. In *KOF* the input buffer is 4 frames for normal moves and 13 frames for special/super moves. In ArcSys games, if a button is held down, the game repeats the button pressed for 3 frames.
+Input buffers function as normal in other fighting games. In *Virtua Fighter 5* the input buffer is 10 frames. In *King of Fighters* the input buffer is 4 frames for normal moves and 13 frames for special/super moves. In ArcSys games, if a button is held down, the game repeats the button pressed for 3 frames. *Kumite* will have one of these implementations.
 
 ### Button Priority
 
@@ -136,7 +136,7 @@ Damage does not stack if a player is hit and knocked out of the ring. Instead th
 In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also more on the intended player experience, using examples from other games. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
 
 - Multiple characters with unique abilities
-- Pre-match movement like in *DOA*
+- Pre-match movement like in *Dead Or Alive*
 
 ## References
 
