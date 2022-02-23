@@ -7,7 +7,7 @@ This design document for *Kumite* is scoped for a minimum viable product. There 
 ## Overview
 
 Inspired by *Karate Tournament*, *Nidhogg*, and *Virtua Fighter*, *Kumite* is a 3D sparring game that seeks to refine the pre-*Street Fighter II* design of early fighting games by returning to a more deliberate, tactical style of gameplay. 
-Players fight in flat 3D arenas, fighting traditional rounds—first to three—with health points and a timer.
+Players fight in flat 3D arenas, with health points and a timer, fighting traditional rounds. First to three wins the game.
 
 ### Character Select
 
@@ -49,7 +49,7 @@ Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Genera
 
 ### Followup Attacks
 
-*Kumite* does not have a conventional combo system. Rather, normal attacks can follow up with one other normal attack, in any of the three Stances. There is a short delay between the first attack and the followup to give the defending player a chance to block the second attack, even if they were hit by the first move. If both attacks hit the enemy, they will be Knocked Down. If the first attack whiffs, the followup attack will come out with reduced startup time. Followup attacks do 1 point of damage.
+*Kumite* does not have a conventional combo system. Rather, successful normal attacks can follow up with one other normal attack, in any of the three Stances. During the followup the defending player can evade or switch stances to block the second attack, even if they were hit by the first move. If both attacks hit the enemy, it will produce a Knockdown. There is a brief window of a few frames for which a second attack will count as a followup, that allows players to delay their strike. 
 
 ### Power Attacks
 
@@ -57,7 +57,7 @@ Power Attacks are performed by pressing Punch and Kick together (![Button A](/im
 
 ### Circular Attacks
 
-Pressing Punch and Evade or Kick and Evade (![Button A](/images/c_a.gif)+![Button C](/images/c_c.gif) or ![Button B](/images/c_b.gif)+![Button C](/images/c_c.gif)) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks have a medium windup time. They are faster than Power Attacks but slower than Kicks. Circular Attacks are primarily to hit a player that Evades predictably, but can also be used to hit opponents that aren't Evading. Performing a Circular Attack puts the player in Mid stance and counts as a Mid attack.
+Pressing Punch and Evade or Kick and Evade (![Button A](/images/c_a.gif)+![Button C](/images/c_c.gif) or ![Button B](/images/c_b.gif)+![Button C](/images/c_c.gif)) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks have a medium windup time. They are faster than Power Attacks but slower than Kicks. Circular Attacks are primarily to hit a player that Evades predictably, but can also be used normally as a medium strength attack. Performing a Circular Attack puts the player in Mid stance and counts as a Mid attack.
 
 Landing a Circular Attack produces a Knockdown and deals 2 points of damage.
 
@@ -81,11 +81,11 @@ Players can walk back or forward by holding the Joystick ![Joystick Left](/image
 
 ### Dashing
 
-Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back while Evading (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif)and![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping ![Joystick Left](/images/c_4.gif) on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Back dashes should have some invincibility frames. Players cannot Attack or Evade during a dash. After a successful dash, there is a brief few frames of recovery.
+Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back while Evading (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif)and![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping ![Joystick Left](/images/c_4.gif) on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Back dashes should have some invincibility frames. Players cannot Attack or Evade during a dash. Back dashes have a recovery window, while forward dashes do not.
 
 ### Evading
 
-Evading ![Button C](/images/c_c.gif) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to evade the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping ![Button C](/images/c_c.gif) will dodge into the background, and tapping the Joystick ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) alongside ![Button C](/images/c_c.gif) will dash into the background or foreground. 
+Evading ![Button C](/images/c_c.gif) allows players to move in a sideways direction clockwise or counterclockwise into the foreground or background. This allows players to escape the opponent’s attack and expose their side or back, or to change positions around the ring. Tapping ![Button C](/images/c_c.gif) will dodge into the background, and tapping the Joystick ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) alongside ![Button C](/images/c_c.gif) will dash into the background or foreground. 
 
 Players can be hit by a Circular Attack during an Evade. The result of an Evade is determined by the opponent's action when the Evade occurs. Aside from Circular Attacks, if the player inputs an Evade *after* the opponent has initiated an attack, the Evade will be successful. If the player inputs an Evade *before* the opponent initiates an attack, the Evade will fail and result in a hit.
 
@@ -113,7 +113,7 @@ If both players trade:
 
 ### Attack Tracking
 
-Tracking functions the same as in *Virtua Fighter*. Attacks do not automatically track, but if the defending player presses a button, the attack will track and they will get hit. Power Attacks have long execution times, so the chances of tracking the opponent are increased since during this time, the opponent is likely to press a button.
+Tracking is a character lining up their attacks to hit an opponent that has adjusted their position from an Evade. Like in *Virtua Fighter*, If one player evades to the side and hasn't pressed any buttons, the other player's hits won't track, and will instead land on the wrong axis. If the defending player presses a button, the attack will track and they will get hit.
 
 ## States
 
@@ -123,7 +123,7 @@ Standard state. This is the only state where the player can block, attack, switc
 
 ### Knocked Down
 
-Players enter the Knockdown state after being hit by an attack and its followup attack, a Power Attack, or from falling off the arena. In this state the player cannot be hit, and both players are reset to their default positions in the middle of the arena. Knockdowns exist to moderate the pacing of the match, to allow players to register what caused the Knockdown, and to remove the wakeup game from the fighting design template.
+Players enter the Knockdown state after being hit by an attack and its followup attack, a Power Attack, or from falling off the arena. Players are also Knocked Down after losing their last point of health at the end of a round. In this state the player cannot be hit, and both players are reset to their default positions in the middle of the arena. Knockdowns exist to moderate the pacing of the match, to allow players to register what caused the Knockdown, and to remove the wakeup game from the fighting design template.
 
 ### Ring Out
 
