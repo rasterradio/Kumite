@@ -27,11 +27,11 @@ Command (when facing right) | Motion
 ![Button B](/images/c_b.gif) | Kick
 ![Button C](/images/c_c.gif) | Evade
 ![Button A](/images/c_a.gif)+![Button B](/images/c_b.gif) | Power Attack
-![Button A](/images/c_a.gif)+![Button C](/images/c_c.gif) or ![Button B](/images/c_b.gif)+![Button C](/images/c_c.gif) | Circular attack
-![Joystick Up](/images/c_8.gif) (hold) | High stance
-![Joystick Down](/images/c_2.gif) (hold) | Low stance
-![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif) or ![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif) | Dash forward
-![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) or ![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif) | Back dash
+![Button A](/images/c_a.gif)+![Button C](/images/c_c.gif) or ![Button B](/images/c_b.gif)+![Button C](/images/c_c.gif) | Circular Attack
+![Joystick Up](/images/c_8.gif) (hold) | High Stance
+![Joystick Down](/images/c_2.gif) (hold) | Low Stance
+![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif) or ![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif) | Dash Forward
+![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) or ![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif) | Dash Backward
 
 ### Stances
 
