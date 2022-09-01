@@ -6,8 +6,8 @@ This design document for *Kumite* is scoped for a minimum viable product. There 
 
 ## Overview
 
-Inspired by *Karate Tournament*, *Nidhogg*, and *Virtua Fighter*, *Kumite* is a 3D sparring game that seeks to refine the pre-*Street Fighter II* design of early fighting games by returning to a more deliberate, tactical style of gameplay. 
-Players fight in flat 3D arenas, with health points and a timer, fighting traditional rounds. First to three wins the game.
+Inspired by *Karate Tournament*, *Bushido Blade*, and *Virtua Fighter*, *Kumite* is a 3D sparring game that seeks to refine the pre-*Street Fighter II* design of early fighting games by returning to a more deliberate, tactical style of gameplay. 
+Players fight in flat 3D arenas, with health points and a timer, fighting traditional best-of-three rounds.
 
 ### Character Select
 
@@ -35,7 +35,7 @@ Command (when facing right) | Motion
 
 ### Stances
 
-Unique to *Kumite* is the Stance system. Similar to games like *Nidhogg*, the player can hold ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) on the joystick to switch to High or Low Stances. This changes what height of attacks will be used and what kinds of moves the player can guard against. When the joystick is neutral, the player is in Mid Stance. If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player can switch out of that stance without getting hit. Most moves in fighting games are active for 1 or 2 frames. Switching stances can only be done when in the Standing state.
+Critical to combat in *Kumite* is the Stance system. Similar to games like *Nidhogg*, the player can hold ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) on the joystick to switch to High or Low Stances. This changes what height of attacks will be used and what kinds of moves the player can block against. When the joystick is neutral, the player is in Mid Stance. If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player can switch out of that stance without getting hit. Most moves in fighting games are active for 1 or 2 frames. Switching stances can only be done when in the Standing state.
 
 ### Blocking
 
@@ -45,7 +45,7 @@ After a successful block the blocker will have a frame advantage if a normal att
 
 ### Punches and Kicks
 
-Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Generally, punches have a shorter range but come out faster, while kicks have a greater range but have a longer startup period. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding ![Joystick Up](/images/c_8.gif) while attacking strikes High, and holding ![Joystick Down](/images/c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
+Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Punches have a shorter range but a shorter startup time, while kicks have a greater range but have a longer startup time. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding ![Joystick Up](/images/c_8.gif) while attacking strikes High, and holding ![Joystick Down](/images/c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
 
 ### Followup Attacks
 
@@ -53,7 +53,7 @@ Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Genera
 
 ### Power Attacks
 
-Power Attacks are performed by pressing Punch and Kick together (![Button A](/images/c_a.gif)+![Button B](/images/c_b.gif)). Power Attacks are slower strikes with long windups that Knock Down and do 3 points of damage. Power Attacks can be performed in each of the stances.
+Power Attacks are performed by pressing Punch and Kick together (![Button A](/images/c_a.gif)+![Button B](/images/c_b.gif)). Power Attacks are slower strikes with long windups that Knock Down and do 3 points of damage. Power Attacks can be performed in each of the stances. Like in *Tekken* players can input a dash command to cancel out of the Power Attack windup and return to Standing state.
 
 ### Circular Attacks
 
@@ -81,7 +81,7 @@ Players can walk back or forward by holding the Joystick ![Joystick Left](/image
 
 ### Dashing
 
-Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back while Evading (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif)and![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). when dashing, players cannot guard, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping ![Joystick Left](/images/c_4.gif) on the joystick to control spacing and quickly guard. Back dashes can not be canceled. Back dashes should have some invincibility frames. Players cannot Attack or Evade during a dash. Back dashes have a recovery window, while forward dashes do not.
+Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back while Evading (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif)and![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). when dashing, players cannot block, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping ![Joystick Left](/images/c_4.gif) on the joystick to control spacing and quickly block. Back dashes can not be canceled. Back dashes should have some invincibility frames. Players cannot Attack or Evade during a dash. Back dashes have a recovery window, while forward dashes do not.
 
 ### Evading
 
@@ -93,7 +93,7 @@ Evasion is a powerful defence tool in *Kumite*, since guessing which stance to b
 
 ### A note on Jumping and Crouching
 
-*Kumite* has no Jumping or Crouching. This is not a title with an air game, overheads or combos, and ducking under and jumping over attacks are not necessary due to the stance guard system. In low stance, the player will go lower to the ground, but not enough to avoid high attacks. Landing some Power Attacks may launch the defending player in the air.
+*Kumite* has no Jumping or Crouching. This is not a title with an air game, overheads or combos, and ducking under and jumping over attacks are not necessary due to the stance blocking system. In low stance, the player will go lower to the ground, but not enough to avoid high attacks. Landing some Power Attacks may launch the defending player in the air.
 
 ## Attacks
 
@@ -127,9 +127,9 @@ Players enter the Knockdown state after being hit by an attack and its followup 
 
 ### Ring Out
 
-If a player falls outside of the ring, they will suffer a Knockdown. The player that rings out will suffer 2 points of damage. Only one character can take damage from ringing out at a time. Players cannot walk off the ring and must dash, evade, or get pushed back or knocked off the ring. 
+If a player falls outside of the ring, they will suffer a Knockdown and take 2 points of damage. Only one character can take damage from ringing out at a time. Players cannot walk off the ring and must dash, evade, or get pushed back or knocked off the ring. 
 
-Damage does not stack if a player is hit and knocked out of the ring. Instead the higher source of damage will be dealt. So if a player is knocked out of the ring by a normal attack, they will take 2 points of damage. If they are knocked out by a Power Attack they will take 3 points.
+Damage does not stack if a player is hit and knocked out of the ring. Instead the higher source of damage will be dealt. So if a player is knocked out of the ring by a normal attack, they will take 2 points of damage. If they are knocked out by a Power Attack they will take 3 points of damage.
 
 ## Future Concepts
 
