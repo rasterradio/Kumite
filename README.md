@@ -13,6 +13,10 @@ Players fight in flat 3D arenas, with health points and a timer, fighting tradit
 
 There are no unique characters in *Kumite*. Players select their gi colour to distinguish themselves in a match, but characters will otherwise appear identical.
 
+### Health
+
+Health is binary, with players able to quickly tell at a glance how many mistakes they can afford to make and clear readability of how much damage each move does.
+
 ### Time Out
 
 If the timer runs out, the player with the most health will win the round. If both players' health is tied, the round counts as a draw, and a round will be awarded to both players. Games cannot end as a draw and if the final match draws, extra rounds are played until there is a single winner.
@@ -35,7 +39,7 @@ Command (when facing right) | Motion
 
 ### Stances
 
-Critical to combat in *Kumite* is the Stance system. Similar to games like *Nidhogg*, the player can hold ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) on the joystick to switch to High or Low Stances. This changes what height of attacks will be used and what kinds of moves the player can block against. When the joystick is neutral, the player is in Mid Stance. If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player can switch out of that stance without getting hit. Most moves in fighting games are active for 1 or 2 frames. Switching stances can only be done when in the Standing state.
+Critical to combat in *Kumite* is the Stance system. Similar to games like *Nidhogg*, the player can hold ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) on the joystick to switch to High or Low Stance respectively. Stances change what height of attacks are used and what moves the player can block against. When the joystick is neutral, the player is in Mid Stance. Switching stances can only be done when in the Standing state.
 
 ### Blocking
 
@@ -43,9 +47,11 @@ Blocking in *Kumite* is automatic and will succeed if the player is not attackin
 
 After a successful block the blocker will have a frame advantage if a normal attack was blocked, and a frame disadvantage if a Power Attack or Circular Attack was blocked.
 
+If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player will stay in the correct stance for the duration of the attack regardless of joystick input.
+
 ### Punches and Kicks
 
-Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Punches have a shorter range but a shorter startup time, while kicks have a greater range but have a longer startup time. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding ![Joystick Up](/images/c_8.gif) while attacking strikes High, and holding ![Joystick Down](/images/c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage, while striking an enemy from the side or behind will do 1.5 points of damage. 
+Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Punches have a shorter range but a shorter startup time, while kicks have a greater range but have a longer startup time. Hitting the enemy with the joystick in neutral will produce a Middle attack, while holding ![Joystick Up](/images/c_8.gif) while attacking strikes High, and holding ![Joystick Down](/images/c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage. 
 
 ### Followup Attacks
 
@@ -53,11 +59,11 @@ Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Punche
 
 ### Power Attacks
 
-Power Attacks are performed by pressing Punch and Kick together (![Button A](/images/c_a.gif)+![Button B](/images/c_b.gif)). Power Attacks are slower strikes with long windups that Knock Down and do 3 points of damage. Power Attacks can be performed in each of the stances. Like in *Tekken* players can input a dash command to cancel out of the Power Attack windup and return to Standing state.
+Power Attacks are performed by pressing Punch and Kick together (![Button A](/images/c_a.gif)+![Button B](/images/c_b.gif)). Power Attacks are slower strikes with long windups that Knockdown and do 3 points of damage. Power Attacks can be performed in each of the stances. Like in *Tekken* players can input any dash input to cancel out of the Power Attack windup and return to Standing state.
 
 ### Circular Attacks
 
-Pressing Punch and Evade or Kick and Evade (![Button A](/images/c_a.gif)+![Button C](/images/c_c.gif) or ![Button B](/images/c_b.gif)+![Button C](/images/c_c.gif)) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking. Circular Attacks have a medium windup time. They are faster than Power Attacks but slower than Kicks. Circular Attacks are primarily to hit a player that Evades predictably, but can also be used normally as a medium strength attack. Performing a Circular Attack puts the player in Mid stance and counts as a Mid attack.
+Pressing Punch and Evade or Kick and Evade (![Button A](/images/c_a.gif)+![Button C](/images/c_c.gif) or ![Button B](/images/c_b.gif)+![Button C](/images/c_c.gif)) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking on the Z-axis. Circular Attacks are faster than Power Attacks but slower than Kicks. Circular Attacks are primarily for hitting a player that Evades predictably, but can also be just used as a medium strength attack. Performing a Circular Attack puts the player in Mid stance and counts as a Mid attack.
 
 Landing a Circular Attack produces a Knockdown and deals 2 points of damage.
 
@@ -81,7 +87,7 @@ Players can walk back or forward by holding the Joystick ![Joystick Left](/image
 
 ### Dashing
 
-Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back while Evading (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif)and![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). when dashing, players cannot block, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping ![Joystick Left](/images/c_4.gif) on the joystick to control spacing and quickly block. Back dashes can not be canceled. Back dashes should have some invincibility frames. Players cannot Attack or Evade during a dash. Back dashes have a recovery window, while forward dashes do not.
+Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back and the Evade button (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif) and ![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). When dashing, players cannot block, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping the opposite direction on the joystick to control spacing and quickly block. Back dashes can not be canceled but carry some invincibility frames. Back dashes have a recovery window, while forward dashes do not. Players cannot Attack or Evade during a dash.
 
 ### Evading
 
@@ -93,17 +99,17 @@ Evasion is a powerful defence tool in *Kumite*, since guessing which stance to b
 
 ### A note on Jumping and Crouching
 
-*Kumite* has no Jumping or Crouching. This is not a title with an air game, overheads or combos, and ducking under and jumping over attacks are not necessary due to the stance blocking system. In low stance, the player will go lower to the ground, but not enough to avoid high attacks. Landing some Power Attacks may launch the defending player in the air.
+*Kumite* has no Jumping or Crouching. This is not a title with an air game, overheads or combos, and ducking under and jumping over attacks are not necessary due to the stance blocking system. In low stance, the player will go lower to the ground, but not enough to avoid high attacks. Knockdowns may briefly launch the player into the air, but the effect is just for show.
 
 ## Attacks
 
 ### Attack Phases
 
-Attack phases function as they do in other fighters, with an execution phase, an active phase, and a recovery phase. Attacks take significantly longer to perform compared to other fighters, due to *Kumite*’s high damage and focus on reading opponent movement and striking at the right opportunity. The frame data from *Karate Tournament* and the *Samurai Shodown* series would make for good references. 
+Attack phases function as they do in other fighters, with an execution phase, an active phase, and a recovery phase. Attacks take longer to perform than most 3D fighters, due to *Kumite*’s high damage and focus on reading opponent movement and striking at the right opportunity. The frame data from *Karate Tournament* and the *Samurai Shodown* series would make for good references. 
 
 ### Knockback
 
-Ground control plays a heavy role in *Kumite*. Attacks cause a large and equal amount of knockback whether they are successful or blocked. In *Karate Tournament*, the player can be pushed out of the arena by knockback from default position in 6 normal hits or 3 power hits, assuming they don’t move. So Power Attacks cause double the knockback of normal attacks. They would also have, on average, double the recovery time.  Knockback will have to be examined against punches/kicks, and a decision will have to be made whether blocking players will be able to respond with an attack, if they have frame advantage.
+Ground control plays a heavy role in *Kumite*. Attacks cause a large and equal amount of knockback whether they are successful or blocked. In *Karate Tournament*, the player can be pushed out of the arena by knockback from default position in 6 normal hits or 3 power hits, assuming they don’t move. So Power Attacks cause double the knockback of normal attacks. They would also have, on average, double the recovery time.  Knockback will have to be examined against punches/kicks, and a decision will have to be made to what extent defending players will have frame advantage when blocking.
 
 ### Attack Trades
 
@@ -113,7 +119,7 @@ If both players trade:
 
 ### Attack Tracking
 
-Tracking is a character lining up their attacks to hit an opponent that has adjusted their position from an Evade. Like in *Virtua Fighter*, If one player evades to the side and hasn't pressed any buttons, the other player's hits won't track, and will instead land on the wrong axis. If the defending player presses a button, the attack will track and they will get hit.
+Tracking is a character lining up their attacks on the Z-axis to hit an opponent that has adjusted their position from an Evade. Like in *Virtua Fighter*, If one player evades to the side and hasn't pressed any buttons, the other player's hits won't track, and will instead whiff. If the defending player presses any button, the attack will track and they will get hit.
 
 ## States
 
@@ -133,10 +139,13 @@ Damage does not stack if a player is hit and knocked out of the ring. Instead th
 
 ## Future Concepts
 
-In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also more on the intended player experience, using examples from other games. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
+In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also more on the intended player experience, using examples from other games. Brief description of health. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
 
 - Multiple characters with unique abilities
 - Pre-match movement like in *Dead Or Alive*
+- More expressive movement like *Tekken*. Sidewalk instead of sidestep? Running instead of just dashing?
+- Figure out what exactly defending players can do while the opponent is executing a Followup Attack. Should they be able to Evade?
+- More example images
 
 ## References
 
