@@ -1,6 +1,6 @@
 # Kumite - A Sparring Video Game
 
-This design document for *Kumite* is scoped for a minimum viable product. There will be features lacking that would be present in a more polished version. I've left out any description of the game's aesthetics because I want to focus on gameplay systems and not get too ahead of myself.
+This design document for *Kumite* is scoped for a minimum viable product. There will be features lacking that would be present in a more polished version. I've left out any description of the game's aesthetics because I want to focus on gameplay systems and not get ahead of myself.
 
 ![Fight Photo](/images/screenshot-spar.jpg)
 
@@ -15,7 +15,7 @@ There are no unique characters in *Kumite*. Players select their gi colour to di
 
 ### Health
 
-Health is binary, with players able to quickly tell at a glance how many mistakes they can afford to make and clear readability of how much damage each move does.
+Health is binary, with a low total of health such as six points. Moves have clear damage results and players can tell at a glance how many mistakes they can afford to make.
 
 ### Time Out
 
@@ -45,7 +45,7 @@ Critical to combat in *Kumite* is the Stance system. Similar to games like *Nidh
 
 Blocking in *Kumite* is automatic and will succeed if the player is not attacking, dashing, or evading while in the correct stance. Kumite does not have chip damage. If one player holds the joystick ![Joystick Up](/images/c_8.gif) to strike high, the other player must be holding the joystick ![Joystick Up](/images/c_8.gif) in the high stance to block the strike.
 
-After a successful block the blocker will have a frame advantage if a normal attack was blocked, and a frame disadvantage if a Power Attack or Circular Attack was blocked.
+After a successful block the defender will have a frame advantage if a normal attack was blocked, and a frame disadvantage if a Power Attack or Circular Attack was blocked.
 
 If an attack is active for multiple frames, as long as the first frame is correctly blocked, the defending player will stay in the correct stance for the duration of the attack regardless of joystick input.
 
@@ -63,7 +63,7 @@ Power Attacks are performed by pressing Punch and Kick together (![Button A](/im
 
 ### Circular Attacks
 
-Pressing Punch and Evade or Kick and Evade (![Button A](/images/c_a.gif)+![Button C](/images/c_c.gif) or ![Button B](/images/c_b.gif)+![Button C](/images/c_c.gif)) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking on the Z-axis. Circular Attacks are faster than Power Attacks but slower than Kicks. Circular Attacks are primarily for hitting a player that Evades predictably, but can also be just used as a medium strength attack. Performing a Circular Attack puts the player in Mid stance and counts as a Mid attack.
+Pressing Punch and Evade or Kick and Evade (![Button A](/images/c_a.gif)+![Button C](/images/c_c.gif) or ![Button B](/images/c_b.gif)+![Button C](/images/c_c.gif)) will perform a Circular Attack. Circular Attacks travel through the foreground and background, hitting opponents that the attacker is not tracking on the Z-axis. Circular Attacks are faster than Power Attacks but slower than Kicks. Circular Attacks are primarily for hitting a player that Evades predictably, but can also be used as a medium strength attack. Performing a Circular Attack puts the player in Mid stance and counts as a Mid attack.
 
 Landing a Circular Attack produces a Knockdown and deals 2 points of damage.
 
@@ -83,7 +83,7 @@ Button priority is ![Button C](/images/c_c.gif)>![Button B](/images/c_b.gif)>![B
 
 ### Walking
 
-Players can walk back or forward by holding the Joystick ![Joystick Left](/images/c_4.gif) or ![Joystick Right](/images/c_6.gif). When walking normally, players will be in Mid Stance. Holding a diagonal input (![Joystick Upleft](/images/c_7.gif)![Joystick Upright](/images/c_9.gif)![Joystick Downright](/images/c_3.gif)![Joystick Downleft](/images/c_1.gif)) allows the player to move back or forward while maintaining a high or low stance.
+Players can walk back or forward by holding the Joystick ![Joystick Left](/images/c_4.gif) or ![Joystick Right](/images/c_6.gif). When walking with ![Joystick Left](/images/c_4.gif) or ![Joystick Right](/images/c_6.gif), players will be in Mid Stance. Holding a diagonal input (![Joystick Upleft](/images/c_7.gif)![Joystick Upright](/images/c_9.gif)![Joystick Downright](/images/c_3.gif)![Joystick Downleft](/images/c_1.gif)) allows players to move back or forward while maintaining a high or low stance.
 
 ### Dashing
 
@@ -99,7 +99,7 @@ Evasion is a powerful defence tool in *Kumite*, since guessing which stance to b
 
 ### A note on Jumping and Crouching
 
-*Kumite* has no Jumping or Crouching. This is not a title with an air game, overheads or combos, and ducking under and jumping over attacks are not necessary due to the stance blocking system. In low stance, the player will go lower to the ground, but not enough to avoid high attacks. Knockdowns may briefly launch the player into the air, but the effect is just for show.
+*Kumite* has no Jumping or Crouching. This is not a title with an air game, overheads or combos, and ducking under and jumping over attacks are not necessary due to the stance blocking system. In Low stance, the player will go lower to the ground, but not enough to avoid High attacks. Knockdowns may briefly launch the player into the air, but the effect is just for show.
 
 ## Attacks
 
@@ -109,7 +109,7 @@ Attack phases function as they do in other fighters, with an execution phase, an
 
 ### Knockback
 
-Ground control plays a heavy role in *Kumite*. Attacks cause a large and equal amount of knockback whether they are successful or blocked. In *Karate Tournament*, the player can be pushed out of the arena by knockback from default position in 6 normal hits or 3 power hits, assuming they don’t move. So Power Attacks cause double the knockback of normal attacks. They would also have, on average, double the recovery time.  Knockback will have to be examined against punches/kicks, and a decision will have to be made to what extent defending players will have frame advantage when blocking.
+Ground control plays a heavy role in *Kumite*. Attacks cause a large and equal amount of knockback whether they are successful or blocked. In *Karate Tournament*, the player can be pushed out of the arena by knockback from the default position in 6 normal hits or 3 power hits, assuming they don’t move. So Power Attacks cause double the knockback of normal attacks. They would also have, on average, double the recovery time.  Knockback will have to be examined against punches/kicks, and a decision will have to be made to what extent defending players will have frame advantage when blocking.
 
 ### Attack Trades
 
@@ -139,7 +139,7 @@ Damage does not stack if a player is hit and knocked out of the ring. Instead th
 
 ## Future Concepts
 
-In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also more on the intended player experience, using examples from other games. Brief description of health. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
+In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also, more on the intended player experience, using examples from other games. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
 
 - Multiple characters with unique abilities
 - Pre-match movement like in *Dead Or Alive*
