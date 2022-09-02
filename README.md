@@ -17,6 +17,10 @@ There are no unique characters in *Kumite*. Players select their gi colour to di
 
 Health is binary, with a low total of health such as six points. Moves have clear damage results and players can tell at a glance how many mistakes they can afford to make.
 
+![Fantasy Strike HUD](/images/fantasy_strike_health_bar.JPG)
+
+<sub>A health bar in *Fantasy Strike*. Players can easily quantify how much damage an attack deals and how many hits they can take.</sub>
+
 ### Time Out
 
 If the timer runs out, the player with the most health will win the round. If both players' health is tied, the round counts as a draw, and a round will be awarded to both players. Games cannot end as a draw and if the final match draws, extra rounds are played until there is a single winner.
@@ -96,6 +100,10 @@ Evading ![Button C](/images/c_c.gif) allows players to move in a sideways direct
 Players can be hit by a Circular Attack during an Evade. The result of an Evade is determined by the opponent's action when the Evade occurs. Aside from Circular Attacks, if the player inputs an Evade *after* the opponent has initiated an attack, the Evade will be successful. If the player inputs an Evade *before* the opponent initiates an attack, the Evade will fail and result in a hit.
 
 Evasion is a powerful defence tool in *Kumite*, since guessing which stance to block has only a 33% chance of success compared to 50% in most fighters.
+
+![Tekken evade](/images/tekken_evade.gif)
+
+<sub>A player evading multiple times in *Tekken*. Note that the opponent isn't tracking the player on the Z-axis. Attacks won't line up until the evading player presses a button.</sub>
 
 ### A note on Jumping and Crouching
 
