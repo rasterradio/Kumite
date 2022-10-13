@@ -15,7 +15,7 @@ There are no unique characters in *Kumite*. Players select their gi colour to di
 
 ### Health
 
-Health is binary, with a low total of health such as six points. Moves have clear damage results and players can tell at a glance how many mistakes they can afford to make.
+Health is binary, with a low total of hit points such as six or eight. Moves have clear damage results and players can tell at a glance how many mistakes they can afford to make.
 
 ![Fantasy Strike HUD](/images/fantasy_strike_health_bar.JPG)
 
