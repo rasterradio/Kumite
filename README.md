@@ -59,7 +59,7 @@ Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Punche
 
 ### Followup Attacks
 
-*Kumite* does not have a conventional combo system. Rather, successful normal attacks can follow up with one other normal attack, in any of the three Stances. During the followup the defending player can evade or switch stances to block the second attack, even if they were hit by the first move. If both attacks hit the enemy, it will produce a Knockdown. There is a brief window of a few frames for which a second attack will count as a followup, that allows players to delay their strike. 
+*Kumite* does not have a conventional combo system. Rather, successful normal attacks can follow up with one other normal attack, in any of the three Stances. During the followup the defending player can evade or switch stances to block the second attack, even if they were hit by the first move. If both attacks hit the enemy, it will produce a Knockdown. There is a brief window of a few frames for which a second attack will count as a followup, which allows players to delay their strike. 
 
 ### Power Attacks
 
@@ -113,7 +113,7 @@ Evasion is a powerful defence tool in *Kumite*, since guessing which stance to b
 
 ### Attack Phases
 
-Attack phases function as they do in other fighters, with an execution phase, an active phase, and a recovery phase. Attacks take longer to perform than most 3D fighters, due to *Kumite*’s high damage and focus on reading opponent movement and striking at the right opportunity. The frame data from *Karate Tournament* and the *Samurai Shodown* series would make for good references. 
+Attack phases function as they do in other fighters, with an execution phase, an active phase, and a recovery phase. Attacks take longer to perform than most 3D fighters, due to *Kumite*’s high damage and focus on reading the opponent's movement and striking at the right opportunity. The frame data from *Karate Tournament* and the *Samurai Shodown* series would make for good references. 
 
 ### Knockback
 
@@ -143,11 +143,11 @@ Players enter the Knockdown state after being hit by an attack and its followup 
 
 If a player falls outside of the ring, they will suffer a Knockdown and take 2 points of damage. Only one character can take damage from ringing out at a time. Players cannot walk off the ring and must dash, evade, or get pushed back or knocked off the ring. 
 
-Damage does not stack if a player is hit and knocked out of the ring. Instead the higher source of damage will be dealt. So if a player is knocked out of the ring by a normal attack, they will take 2 points of damage. If they are knocked out by a Power Attack they will take 3 points of damage.
+Damage does not stack if a player is hit and knocked out of the ring. Instead, the higher source of damage will be dealt. So if a player is knocked out of the ring by a normal attack, they will take 2 points of damage. If they are knocked out by a Power Attack they will take 3 points of damage.
 
 ## Future Concepts
 
-In the future a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also, more on the intended player experience, using examples from other games. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
+In the future, a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also, more on the intended player experience, using examples from other games. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
 
 - Multiple characters with unique abilities
 - Pre-match movement like in *Dead Or Alive*
