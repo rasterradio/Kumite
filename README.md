@@ -7,6 +7,7 @@ This design document for *Kumite* is scoped for a minimum viable product. There 
 ## Overview
 
 Inspired by *Karate Tournament*, *Bushido Blade*, and *Virtua Fighter*, *Kumite* is a 3D sparring game that seeks to refine the pre-*Street Fighter II* design of early fighting games by returning to a more deliberate, tactical style of gameplay. Sidestep your opponent's attack, catch them on a whiffed swing, and strike. Earn the stripes on your gi. Respect is earned, not given.
+
 Players fight in flat 3D arenas, with health points and a timer, fighting traditional best-of-three rounds.
 
 ### Character Select
