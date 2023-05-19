@@ -1,14 +1,14 @@
 # Kumite - A Sparring Video Game
 
-This design document for *Kumite* is scoped for a minimum viable product. Features are lacking that would be present in a more polished version. I've left out any description of the game's aesthetics because I want to focus on gameplay systems and not get ahead of myself.
+This design document for *Kumite* is scoped for a minimum viable product. Features are lacking that would be present in a more polished version. I've left out any description of the game's aesthetics because I want to focus on gameplay and not get ahead of myself.
 
 ![Fight Photo](/images/screenshot-spar.jpg)
 
 ## Overview
 
-Inspired by *Karate Tournament*, *Bushido Blade*, and *Virtua Fighter*, *Kumite* is a 3D sparring game that seeks to refine the pre-*Street Fighter II* design of primordial fighting games with more deliberate, tactical gameplay. Sidestep your opponent's attack, catch them on a whiffed swing, and strike. Earn the stripes on your gi. Respect is earned, not given.
+Inspired by *Karate Tournament*, *Bushido Blade*, and *Virtua Fighter*, *Kumite* is a 3D sparring game that seeks to refine the pre-*Street Fighter II* design of primordial fighting games with more deliberate, tactical gameplay. Sidestep your opponent, predict their move, and strike. Earn the stripes on your gi. Respect is earned, not given.
 
-Players fight in flat 3D arenas, with health points and a timer, fighting traditional best-of-three rounds.
+Players fight in flat 3D arenas, with health points and a timer, fighting best-of-three rounds.
 
 ### Character Select
 
@@ -44,29 +44,29 @@ Command (when facing right) | Motion
 
 ### Stances
 
-Critical to combat in *Kumite* is the Stance system. Like *Nidhogg*, the player can hold ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) to switch to the respective High or Low Stance. Stances change what height of attacks are used and what moves the player can block against. When the joystick is neutral, the player is in Mid Stance. Switching stances can only be done in the Standing state.
+Crucial to combat in *Kumite* is the Stance system. Like in *Nidhogg*, the player can hold ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) to switch to the respective High or Low Stance. When the joystick is neutral, the player is in Mid Stance. Stances change what height of attacks are used and what moves the player can block. Switching stances can only be done in the Standing state.
 
 ### Blocking
 
 Blocking in *Kumite* is automatic and will succeed if the player is not attacking, dashing, or evading while in the correct stance. If the attacker inputs ![Joystick Up](/images/c_8.gif) to strike high, the defender must also input ![Joystick Up](/images/c_8.gif) in the high stance to block the strike.
 
-After blocking, the defender will have a frame advantage if a normal attack was blocked, and a frame disadvantage if a Power Attack or Circular Attack was blocked.
+The defender will have a frame advantage if a normal attack was blocked, and a frame disadvantage if a Power Attack or Circular Attack was blocked.
 
 If an attack is active for multiple frames, as long as the first frame is blocked, the defender will stay in the correct stance during the attack regardless of joystick input.
 
-Kumite doesn't have chip damage.
+Kumite doesn't have chip damage when blocking.
 
 ### Punches and Kicks
 
-Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Punches have a shorter range but a shorter startup time, while kicks have a greater range but a longer startup time. Attacking with the joystick in neutral creates a Middle attack, holding ![Joystick Up](/images/c_8.gif) while attacking strikes High, and holding ![Joystick Down](/images/c_2.gif) while attacking strikes Low. Striking a standing opponent will do 1 point of damage. 
+Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Punches have a shorter range but a shorter startup time, while kicks have a greater range but a longer startup time. Attacking with the joystick in neutral performs a Mid attack, holding ![Joystick Up](/images/c_8.gif) while attacking strikes High, and holding ![Joystick Down](/images/c_2.gif) while attacking strikes Low. Striking a standing opponent does 1 point of damage. 
 
 ### Followup Attacks
 
-*Kumite* does not have a conventional combo system. Rather, successful normal attacks can follow up with another normal attack, in any of the three Stances. During the Followup the defender can evade or switch stances to block the second attack, even if they were hit by the first move. If both attacks hit the enemy, it will result in a Knockdown. There is a brief window where a second attack counts as a Followup, letting players delay their strike. 
+*Kumite* does not have a conventional combo system. Rather, successful normal attacks can be followed up with another normal attack, in any Stance. During the Followup the defender can Evade or switch stances to block the second attack, even if they were hit by the first move. If both attacks land, the defender will be Knocked Down. There is a brief window where a second attack counts as a Followup, letting players delay their strike. 
 
 ### Power Attacks
 
-Power Attacks are performed by pressing Punch and Kick together (![Button A](/images/c_a.gif)+![Button B](/images/c_b.gif)). Power Attacks are slow strikes with long windups that Knockdown and do 3 points of damage. Power Attacks can be performed in each stance. Like in *Tekken*, players can input a dash to cancel out of the Power Attack windup and return to the Standing state.
+Power Attacks are performed by pressing Punch and Kick together (![Button A](/images/c_a.gif)+![Button B](/images/c_b.gif)). Power Attacks are slow strikes with long windups that Knockdown and do 3 points of damage. Power Attacks can be performed in each stance. Like in *Tekken*, players can input a dash to cancel out of the Power Attack startup and return to the Standing state.
 
 ### Circular Attacks
 
@@ -80,7 +80,7 @@ Evading ![Button C](/images/c_c.gif) is covered in the Movement section.
 
 ### Input Buffer
 
-The Input buffer functions like other fighting games. In *Virtua Fighter 5* the input buffer is 10 frames. In *King of Fighters* the input buffer is 4 frames for normal moves and 13 frames for special/super moves. In ArcSys games, if a button is held down, the game repeats the button pressed for 3 frames. *Kumite* will have one of these implementations.
+The Input buffer functions like other fighting games. In *Virtua Fighter 5* the input buffer is 10 frames. In *King of Fighters* the input buffer is 4 frames for normal moves and 13 frames for special/super moves. In ArcSys games, if a button is held down, the game repeats the pressed button for 3 frames. *Kumite* will have one of these implementations.
 
 ### Button Priority
 
@@ -110,7 +110,7 @@ Evasion is a powerful defence tool in *Kumite*. Guessing which stance to block h
 
 ### A note on Jumping and Crouching
 
-*Kumite* has no Jumping or Crouching. This is not a title with an air game, overheads or combos, and ducking under and jumping over attacks are unnecessary due to the Stance system. In the Low stance, the player will go lower to the ground, but not enough to avoid High attacks. Knockdowns launch the player into the air, but the effect is for show and not indicative of a juggling opportunity.
+*Kumite* has no Jumping or Crouching. This is not a title with an air game, overheads or complex combos. Ducking under and jumping over attacks are unnecessary due to the Stance system. In the Low stance, the player will go lower to the ground, but not enough to avoid High attacks. Knockdowns launch the player into the air, but the effect is for show and not indicative of a juggling opportunity.
 
 ## Attacks
 
@@ -144,9 +144,9 @@ Players enter the Knockdown state when hit by an attack and its Followup Attack,
 
 ### Ring Out
 
-If a player falls outside of the ring, they will suffer a Knockdown and take 2 points of damage. Only one character can be damaged from ringing out at a time. Players can't walk off the ring and must dash, evade, or get pushed back or knocked off the ring. 
+If a player falls outside of the ring, they will suffer a Knockdown and take 2 points of damage. Only one character can be damaged from ringing out at a time. If both players Ring Out, whichever player hits the ground first will take damage. Players can't walk off the ring and must dash, evade, or get pushed back or knocked off the ring. 
 
-DDamage does not stack if a player is hit and knocked out of the ring. Instead, damage is only dealt from the more powerful source. So if a player is knocked out of the ring by a normal attack, they will take 2 points of damage from the Ring Out. If they are knocked out by a Power Attack they will take 3 points of damage from the Power Attack.
+Damage does not stack if a player is hit and knocked out of the ring. Instead, damage is only dealt from the more powerful source. So if a player is Ringed Out by a normal attack, they will only take 2 points of damage from the Ring Out. If they are Ringed Out by a Power Attack they will only take 3 points of damage from the Power Attack.
 
 ## Future Concepts
 
