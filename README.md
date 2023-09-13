@@ -154,7 +154,7 @@ At the start of each round, before the battle begins, players get a few seconds 
 
 ## Future Concepts
 
-In the future, a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also, more on the intended player experience, using examples from other games. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
+*Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
 
 - Multiple characters with distinct abilities
 - Determine player distance at the start of the match. What options are available to players and how much do they need to move for other options to open/close?
