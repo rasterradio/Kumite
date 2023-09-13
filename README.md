@@ -1,18 +1,18 @@
-# Kumite - A Sparring Video Game
+# Shotokan Dojo - A Sparring Video Game
 
-This design document for *Kumite* is scoped for a minimum viable product. Features are lacking that would be present in a more polished version. I've left out any description of the game's aesthetics because I want to focus on gameplay and not get ahead of myself.
+This design document for *Shotokan Dojo* is scoped for a minimum viable product. Features are lacking that would be present in a more polished version. I've left out details of the game's aesthetics because I want to focus on gameplay and not get ahead of myself.
 
 ![Fight Photo](/images/screenshot-spar.jpg)
 
 ## Overview
 
-Inspired by *Karate Tournament*, *Bushido Blade*, and *Virtua Fighter*, *Kumite* is a 3D sparring game that seeks to refine the pre-*Street Fighter II* design of primordial fighting games with more deliberate, tactical gameplay. Sidestep your opponent, predict their move, and strike. Earn the stripes on your gi. Respect is earned, not given.
+Inspired by *Karate Tournament*, *Bushido Blade*, and *Virtua Fighter*, *Shotokan Dojo* is a 3D sparring game that seeks to refine the pre-*Street Fighter II* design of primordial fighting games with more deliberate, tactical gameplay. Sidestep your opponent, predict their move, and strike. Earn the stripes on your gi. Respect is earned, not given.
 
 Players fight in flat 3D arenas, with health points and a timer, fighting best-of-three rounds.
 
 ### Character Select
 
-There are no unique characters in *Kumite*. Players select their gi colour to distinguish themselves in a match.
+There are no unique characters in *Shotokan Dojo*. Players select their gi colour to distinguish themselves in a match.
 
 ### Health
 
@@ -28,7 +28,7 @@ If the timer runs out, the player with the most health wins the round. If both p
 
 ## Controls
 
-*Kumite* is played using a Joystick ![Joystick Up](/images/c_8.gif) and three buttons: Punch ![Button A](/images/c_a.gif), Kick ![Button B](/images/c_b.gif), and Evade ![Button C](/images/c_c.gif).
+*Shotokan Dojo* is played using a Joystick ![Joystick Up](/images/c_8.gif) and three buttons: Punch ![Button A](/images/c_a.gif), Kick ![Button B](/images/c_b.gif), and Evade ![Button C](/images/c_c.gif).
 
 Command (when facing right) | Motion
 ------------ | -------------
@@ -44,17 +44,17 @@ Command (when facing right) | Motion
 
 ### Stances
 
-Crucial to combat in *Kumite* is the Stance system. Like in *Nidhogg*, the player can hold ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) to switch to the respective High or Low Stance. When the joystick is neutral, the player is in Mid Stance. Stances change what height of attacks are used and what moves the player can block. Switching stances can only be done in the Standing state.
+Crucial to combat in *Shotokan Dojo* is the Stance system. Like in *Nidhogg*, the player can hold ![Joystick Up](/images/c_8.gif) or ![Joystick Down](/images/c_2.gif) to switch to the respective High or Low Stance. When the joystick is neutral, the player is in Mid Stance. Stances change what height of attacks are used and what moves the player can block. Switching stances can only be done in the Standing state.
 
 ### Blocking
 
-Blocking in *Kumite* is automatic and will succeed if the player is not attacking, dashing, or evading while in the correct stance. If the attacker inputs ![Joystick Up](/images/c_8.gif) to strike high, the defender must also input ![Joystick Up](/images/c_8.gif) in the high stance to block the strike.
+Blocking in *Shotokan Dojo* is automatic and will succeed if the player is not attacking, dashing, or evading while in the correct stance. If the attacker inputs ![Joystick Up](/images/c_8.gif) to strike high, the defender must also input ![Joystick Up](/images/c_8.gif) in the high stance to block the strike.
 
 The defender will have a frame advantage if a normal attack was blocked, and a frame disadvantage if a Power Attack or Circular Attack was blocked.
 
 If an attack is active for multiple frames, as long as the first frame is blocked, the defender will stay in the correct stance during the attack regardless of joystick input.
 
-Kumite doesn't have chip damage when blocking.
+Shotokan Dojo doesn't have chip damage when blocking.
 
 ### Punches and Kicks
 
@@ -62,7 +62,7 @@ Punch ![Button A](/images/c_a.gif) and Kick ![Button B](/images/c_b.gif). Punche
 
 ### Followup Attacks
 
-*Kumite* does not have a conventional combo system. Rather, successful normal attacks can be followed up with another normal attack, in any Stance. During the Followup the defender can Evade or switch stances to block the second attack, even if they were hit by the first move. If both attacks land, the defender will be Knocked Down. There is a brief window where a second attack counts as a Followup, letting players delay their strike. 
+*Shotokan Dojo* does not have a conventional combo system. Rather, successful normal attacks can be followed up with another normal attack, in any Stance. During the Followup the defender can Evade or switch stances to block the second attack, even if they were hit by the first move. If both attacks land, the defender will be Knocked Down. There is a brief window where a second attack counts as a Followup, letting players delay their strike. 
 
 ### Power Attacks
 
@@ -80,7 +80,7 @@ Evading ![Button C](/images/c_c.gif) is covered in the Movement section.
 
 ### Input Buffer
 
-The Input buffer functions like other fighting games. In *Virtua Fighter 5* the input buffer is 10 frames. In *King of Fighters* the input buffer is 4 frames for normal moves and 13 frames for special/super moves. In ArcSys games, if a button is held down, the game repeats the pressed button for 3 frames. *Kumite* will have one of these implementations.
+The Input buffer functions like other fighting games. In *Virtua Fighter 5* the input buffer is 10 frames. In *King of Fighters* the input buffer is 4 frames for normal moves and 13 frames for special/super moves. In ArcSys games, if a button is held down, the game repeats the pressed button for 3 frames. *Shotokan Dojo* will have one of these implementations.
 
 ### Button Priority
 
@@ -90,11 +90,11 @@ Button priority is ![Button C](/images/c_c.gif)>![Button B](/images/c_b.gif)>![B
 
 ### Walking
 
-Players can walk back or forward by holding ![Joystick Left](/images/c_4.gif) or ![Joystick Right](/images/c_6.gif). When walking with ![Joystick Left](/images/c_4.gif) or ![Joystick Right](/images/c_6.gif), players will be in Mid Stance. Holding a diagonal input (![Joystick Upleft](/images/c_7.gif)![Joystick Upright](/images/c_9.gif)![Joystick Downright](/images/c_3.gif)![Joystick Downleft](/images/c_1.gif)) lets players move back or forward while maintaining a high or low stance.
+Players can walk back or forward by holding ![Joystick Left](/images/c_4.gif) or ![Joystick Right](/images/c_6.gif). When walking with ![Joystick Left](/images/c_4.gif) or ![Joystick Right](/images/c_6.gif), players will be in Mid Stance. Holding a diagonal input (![Joystick Upleft](/images/c_7.gif)![Joystick Upright](/images/c_9.gif)![Joystick Downright](/images/c_3.gif)![Joystick Downleft](/images/c_1.gif)) lets players move back or forward while maintaining a high or low stance. Walking into the opponent will push them.
 
 ### Dashing
 
-Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back and the Evade button (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif) and ![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). When dashing, players can't block, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping the opposite direction on the joystick to control spacing and quickly block. Back dashes can not be canceled but carry some invincibility frames. Back dashes have a recovery window, while forward dashes do not. Players can't Attack or Evade during a dash.
+Players can dash forward or back with a double forward or backward tap of the Joystick (![Joystick Left](/images/c_4.gif)![Joystick Left](/images/c_4.gif) and ![Joystick Right](/images/c_6.gif)![Joystick Right](/images/c_6.gif)), or by tapping forward or back and the Evade button (![Joystick Left](/images/c_4.gif)+![Button C](/images/c_c.gif) and ![Joystick Right](/images/c_6.gif)+![Button C](/images/c_c.gif)). When dashing, players can't block, and any attack that hits them will perform a Knockdown. Forward dashes can be canceled by tapping the opposite direction on the joystick to control spacing and quickly block. Back dashes can not be canceled but carry some invincibility frames. Back dashes have a recovery window, while forward dashes do not. Players can't Attack or Evade during a dash. Dashing into the opponent will push them.
 
 ### Evading
 
@@ -102,7 +102,7 @@ Evading ![Button C](/images/c_c.gif) lets players dodge clockwise or countercloc
 
 Players can be hit by a Circular Attack during an Evade. The result of an Evade is determined by the opponent's action when the Evade occurs. Aside from Circular Attacks, if the player inputs an Evade *after* the opponent starts an attack, the Evade will succeed. If the player inputs an Evade *before* the opponent initiates an attack, the Evade will fail and result in a hit.
 
-Evasion is a powerful defence tool in *Kumite*. Guessing which stance to block has only a 33% chance of success compared to 50% in other fighters. Evades are more reliable but have more precise timings and can be punished with Circular Attacks.
+Evasion is a powerful defence tool in *Shotokan Dojo*. Guessing which stance to block has only a 33% chance of success compared to 50% in other fighters. Evades are more reliable but have more precise timings and can be punished with Circular Attacks.
 
 ![Tekken evade](/images/tekken_evade.gif)
 
@@ -110,17 +110,17 @@ Evasion is a powerful defence tool in *Kumite*. Guessing which stance to block h
 
 ### A note on Jumping and Crouching
 
-*Kumite* has no Jumping or Crouching. This is not a title with an air game, overheads or complex combos. Ducking under and jumping over attacks are unnecessary due to the Stance system. In the Low stance, the player will go lower to the ground, but not enough to avoid High attacks. Knockdowns launch the player into the air, but the effect is for show and not indicative of a juggling opportunity.
+*Shotokan Dojo* has no Jumping or Crouching. This is not a title with an air game, overheads or complex combos. Ducking under and jumping over attacks are unnecessary due to the Stance system. In the Low stance, the player will go lower to the ground, but not enough to avoid High attacks. Knockdowns launch the player into the air, but the effect is for show and not indicative of a juggling opportunity.
 
 ## Attacks
 
 ### Attack Phases
 
-Attack phases function like other fighters, with an execution phase, an active phase, and a recovery phase. Attacks take longer to perform than most 3D fighters, due to *Kumite*’s high damage and focus on reading the opponent's movement and striking at the right opportunity. The frame data from *Karate Tournament* and the *Samurai Shodown* series would make for helpful references. 
+Attack phases function like other fighters, with an execution phase, an active phase, and a recovery phase. Attacks take longer to perform than most 3D fighters, due to *Shotokan Dojo*’s high damage and focus on reading the opponent's movement and striking at the right opportunity. The frame data from *Karate Tournament* and the *Samurai Shodown* series would make for helpful references. 
 
 ### Knockback
 
-Ground control plays an important role in *Kumite*. Attacks cause equal amounts of knockback whether they succeed or are blocked. In *Karate Tournament*, players are pushed out of the arena by knockback from the starting position in 6 normal hits or 3 power hits. So Power Attacks cause double the knockback of normal attacks. They also have double the recovery time. I'll need to weigh Knockbacks against punches and kicks, and decide to what extent defending players will have frame advantage when blocking.
+Ground control plays an important role in *Shotokan Dojo*. Attacks cause equal amounts of knockback whether they succeed or are blocked. In *Karate Tournament*, players are pushed out of the arena by knockback from the starting position in 6 normal hits or 3 power hits. So Power Attacks cause double the knockback of normal attacks. They also have double the recovery time. I'll need to weigh Knockbacks against punches and kicks, and decide to what extent defending players will have frame advantage when blocking.
 
 ### Attack Trades
 
@@ -130,7 +130,7 @@ If both players trade:
 
 ### Attack Tracking
 
-Tracking is a character lining up their attacks on the Z-axis to hit an opponent that has adjusted their position from an Evade. Like in *Virtua Fighter*, If one player evades to the side and hasn't pressed any buttons, the other player's hits won't track, and will instead whiff. If the defending player presses any button, the attack will track and they will get hit.
+Tracking is a character lining up their attacks on the Z-axis to hit an opponent that has adjusted their position from an Evade. Like in *Virtua Fighter*, If one player evades to the side and hasn't pressed any buttons, the other player's hits won't track, and will instead whiff. If the defending player presses any button, the attack will track and they will get hit. The attack will also track if the player switches out of mid stance to high or low stance, but not from high or low stance into mid.
 
 ## States
 
@@ -140,7 +140,7 @@ Standard state. This is the only state where the player can block, attack, switc
 
 ### Knocked Down
 
-Players enter the Knockdown state when hit by an attack and its Followup Attack, a Power Attack, or from falling out of the arena. Players are also Knocked Down after losing their last health point at the end of a round. In this state the player cannot be hit, and both players return to their starting positions in the middle of the arena. Knockdowns moderate the pacing of the match. They let players reflect on what caused the Knockdown. And by resetting both players to neutral, Kumite cuts the Wakeup Game from the fighting design template.
+Players enter the Knockdown state when hit by an attack and its Followup Attack, a Power Attack, or from falling out of the arena. Players are also Knocked Down after losing their last health point at the end of a round. In this state the player cannot be hit, and both players return to their starting positions in the middle of the arena. While one player is Knocked Down, the attacking player can continue to move. Knockdowns moderate the pacing of the match. They let players reflect on what caused the Knockdown. And by resetting both players to neutral, Shotokan Dojo cuts the Wakeup Game from the fighting design template.
 
 ### Ring Out
 
@@ -148,16 +148,18 @@ If a player falls outside of the ring, they will suffer a Knockdown and take 2 p
 
 Damage does not stack if a player is hit and knocked out of the ring. Instead, damage is only dealt from the more powerful source. So if a player is Ringed Out by a normal attack, they will only take 2 points of damage from the Ring Out. If they are Ringed Out by a Power Attack they will only take 3 points of damage from the Power Attack.
 
+### Round Start
+
+At the start of each round, before the battle begins, players get a few seconds to move freely around the arena. During this time, players can walk forward and back, dash, Evade, and change stance. Players cannot attack.
+
 ## Future Concepts
 
 In the future, a "match structure" section will be needed, outlining pre-match and post-match gameplay. Also, more on the intended player experience, using examples from other games. *Fighters Destiny* has a similar point system and could point to future gameplay expansion. Other possible ideas include:
 
 - Multiple characters with distinct abilities
-- Pre-match movement like in *Dead Or Alive*
-- More expressive movement like *Tekken*. Sidewalk instead of sidestep? Running instead of just dashing?
+- Determine player distance at the start of the match. What options are available to players and how much do they need to move for other options to open/close?
 - Figure out what exactly the defender can do while the attacker is executing a Followup Attack. Should they be able to Evade?
 - More example images
-- If a defender switches stances after Evading, does that cause the opponent's attack to Track?
 
 ## References
 
